@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo+github博客搭建笔记(简略), 路飞的小破站">
+    <meta name="keywords" content="路飞的小破站">
     <meta name="description" content="很水的小地方">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo+github博客搭建笔记(简略) | 路飞的小破站</title>
+    <title>路飞的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo+github博客搭建笔记(简略)</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -467,63 +467,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="hexo-github个人博客快速上手"><a href="#hexo-github个人博客快速上手" class="headerlink" title="hexo+github个人博客快速上手"></a>hexo+github个人博客快速上手</h2><p>依赖:</p>
-<ul>
-<li><h4 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git安装</a></h4></li>
-</ul>
-<p>索性一直下一步就好.✔<br>就最后一步添加路径选择Use Git from the Windows Command Prompt.<br>这样就可以在命令行里使用git.</p>
-<ul>
-<li><h4 id="绑定Github"><a href="#绑定Github" class="headerlink" title="绑定Github"></a>绑定Github</h4></li>
-</ul>
-<p><code>ssh-keygen -t rsa</code></p>
-<p>生成密钥, 回车确认.</p>
-<p>.ssh目录下就生成了这么个东西</p>
-
-<p>然后要添加到github.在账户展开找到Settings, 然后有个SSH and GPG keys.</p>
-<p>把pub文件里的内容赋值到key中.随便叫个名字保存.</p>
-<p><code>ssh -T git@github.com</code></p>
-<p>输入验证,yes 绑定成功,一般不会出问题.</p>
-<h6 id="关于git-提交文件到远程仓库啥的参考菜鸟教程"><a href="#关于git-提交文件到远程仓库啥的参考菜鸟教程" class="headerlink" title="关于git 提交文件到远程仓库啥的参考菜鸟教程."></a>关于git 提交文件到远程仓库啥的参考<a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-create-repository.html">菜鸟教程</a>.</h6><ul>
-<li><h4 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h4></li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://nodejs.org/en/">node.js官网</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/antma/article/details/86104068">安装教程</a></p>
-<p>安装后在命令行验证:</p>
-<p><code>node -v         npm -v</code></p>
-<h5 id="设置npm在安装全局模块时的路径和环境变量"><a href="#设置npm在安装全局模块时的路径和环境变量" class="headerlink" title="设置npm在安装全局模块时的路径和环境变量"></a>设置npm在安装全局模块时的路径和环境变量</h5><p>nodejs 文件夹中新建两个空文件夹 node_cache、node_global</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> prefix <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span>
-<span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_cache"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>配置环境变量 “NODE_PATH” 值为”..\nodejs\node_global\node_modules”</p>
-<p>然后编辑用户变量里的Path，将相应npm的路径改为：…\nodejs\node_global</p>
-<p>在 cmd 命令下执行 npm install webpack -g ：</p>
-<p><strong>这个时候可能会报错</strong></p>
-<p>文件权限问题, 给node_global node_cache高点权限(完全控制)</p>
-<ul>
-<li><h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4></li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/docs/">hexo文档</a></p>
-<p>先建一个Blog文件夹,在这目录下,右键菜单选择Git Bush Here.</p>
-<p><code>npm install -g hexo-cli</code></p>
-<p>安装hexo.</p>
-<p><code>hexo init</code></p>
-<p>这个命令用来初始化博客,就会生成默认配置的文件.</p>
-<p>**如果显示 hexo command not found.**✖️😥</p>
-<p>我采用的方式是给它配个环境变量, 在Path里加,值为”…/hexo/bin”.</p>
-<p>然后就是会常用到的4个命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean   <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span>
-hexo g       <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span>
-hexo d       <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span>
-hexo s		 <span class="token comment"># server 启动本地服务器 localhost:4000即可访问</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>将hexo部署到github,</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/AinUser/article/details/77609180">参考博客1</a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40871466/article/details/86763540">参考博客2</a></p>
-<ul>
-<li><h4 id="写文章-发布文章"><a href="#写文章-发布文章" class="headerlink" title="写文章,发布文章"></a>写文章,发布文章</h4></li>
-</ul>
-<p>在博客根目录下打开git bash,</p>
-<p><code>npm install hexo-deployer-git --save</code></p>
+                <h1 id="主人的小简历"><a href="#主人的小简历" class="headerlink" title="主人的小简历"></a>主人的小简历</h1><h5 id="姓名-路飞"><a href="#姓名-路飞" class="headerlink" title="姓名:    路飞"></a>姓名:    路飞</h5><h5 id="性别-男"><a href="#性别-男" class="headerlink" title="性别:    男"></a>性别:    男</h5><h5 id="学历-本科大二在读"><a href="#学历-本科大二在读" class="headerlink" title="学历:    本科大二在读."></a>学历:    本科大二在读.</h5><h5 id="分类-🐂🐎……"><a href="#分类-🐂🐎……" class="headerlink" title="分类:    🐂🐎……"></a>分类:    🐂🐎……</h5><p><img src="https://i.imgur.com/4csrUHB.jpg" alt="hope"></p>
 
                 
             </div>
@@ -550,7 +494,7 @@ hexo s		 <span class="token comment"># server 启动本地服务器 localhost:40
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://onlyluffy.github.io/2021/10/28/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0-%E7%AE%80%E7%95%A5/">https://onlyluffy.github.io/2021/10/28/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0-%E7%AE%80%E7%95%A5/</a>
+                    <a href="https://onlyluffy.github.io/about/index.html">https://onlyluffy.github.io/about/index.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -755,54 +699,18 @@ hexo s		 <span class="token comment"># server 启动本地服务器 localhost:40
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/10/28/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                <a href="/about/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="博客搭建">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">博客搭建</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-28
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            路飞
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/10/27/My-Gallery/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="My Gallery">
-                        
-                        <span class="card-title">My Gallery</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -813,7 +721,7 @@ hexo s		 <span class="token comment"># server 启动本地服务器 localhost:40
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-28
                             </span>
                         <span class="publish-author">
                             
@@ -823,6 +731,45 @@ hexo s		 <span class="token comment"># server 启动本地服务器 localhost:40
                         </span>
                     </div>
                 </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/about/index.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            路飞
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
             </div>
         </div>
