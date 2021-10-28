@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hexo+github博客搭建笔记(简略)</title>
+      <link href="/2021/10/28/hexo-github-bo-ke-da-jian-bi-ji-jian-lue/"/>
+      <url>/2021/10/28/hexo-github-bo-ke-da-jian-bi-ji-jian-lue/</url>
+      
+        <content type="html"><![CDATA[<h2 id="hexo-github个人博客快速上手"><a href="#hexo-github个人博客快速上手" class="headerlink" title="hexo+github个人博客快速上手"></a>hexo+github个人博客快速上手</h2><p>依赖:</p><ul><li><h4 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a><a href="https://git-scm.com/download/win">Git安装</a></h4></li></ul><p>索性一直下一步就好.✔<br>就最后一步添加路径选择Use Git from the Windows Command Prompt.<br>这样就可以在命令行里使用git.</p><ul><li><h4 id="绑定Github"><a href="#绑定Github" class="headerlink" title="绑定Github"></a>绑定Github</h4></li></ul><p><code>ssh-keygen -t rsa</code></p><p>生成密钥, 回车确认.</p><p>.ssh目录下就生成了这么个东西</p><p>然后要添加到github.在账户展开找到Settings, 然后有个SSH and GPG keys.</p><p>把pub文件里的内容赋值到key中.随便叫个名字保存.</p><p><code>ssh -T git@github.com</code></p><p>输入验证,yes 绑定成功,一般不会出问题.</p><h6 id="关于git-提交文件到远程仓库啥的参考菜鸟教程"><a href="#关于git-提交文件到远程仓库啥的参考菜鸟教程" class="headerlink" title="关于git 提交文件到远程仓库啥的参考菜鸟教程."></a>关于git 提交文件到远程仓库啥的参考<a href="https://www.runoob.com/git/git-create-repository.html">菜鸟教程</a>.</h6><ul><li><h4 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h4></li></ul><p><a href="https://nodejs.org/en/">node.js官网</a></p><p><a href="https://blog.csdn.net/antma/article/details/86104068">安装教程</a></p><p>安装后在命令行验证:</p><p><code>node -v         npm -v</code></p><h5 id="设置npm在安装全局模块时的路径和环境变量"><a href="#设置npm在安装全局模块时的路径和环境变量" class="headerlink" title="设置npm在安装全局模块时的路径和环境变量"></a>设置npm在安装全局模块时的路径和环境变量</h5><p>nodejs 文件夹中新建两个空文件夹 node_cache、node_global</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> prefix <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span><span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_cache"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>配置环境变量 “NODE_PATH” 值为”..\nodejs\node_global\node_modules”</p><p>然后编辑用户变量里的Path，将相应npm的路径改为：…\nodejs\node_global</p><p>在 cmd 命令下执行 npm install webpack -g ：</p><p><strong>这个时候可能会报错</strong></p><p>文件权限问题, 给node_global node_cache高点权限(完全控制)</p><ul><li><h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4></li></ul><p><a href="https://hexo.io/docs/">hexo文档</a></p><p>先建一个Blog文件夹,在这目录下,右键菜单选择Git Bush Here.</p><p><code>npm install -g hexo-cli</code></p><p>安装hexo.</p><p><code>hexo init</code></p><p>这个命令用来初始化博客,就会生成默认配置的文件.</p><p>**如果显示 hexo command not found.**✖️😥</p><p>我采用的方式是给它配个环境变量, 在Path里加,值为”…/hexo/bin”.</p><p>然后就是会常用到的4个命令</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean   <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span>hexo g       <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span>hexo d       <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span>hexo s <span class="token comment"># server 启动本地服务器 localhost:4000即可访问</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>将hexo部署到github,</p><p><a href="https://blog.csdn.net/AinUser/article/details/77609180">参考博客1</a></p><p><a href="https://blog.csdn.net/qq_40871466/article/details/86763540">参考博客2</a></p><ul><li><h4 id="写文章-发布文章"><a href="#写文章-发布文章" class="headerlink" title="写文章,发布文章"></a>写文章,发布文章</h4></li></ul><p>在博客根目录下打开git bash,</p><p><code>npm install hexo-deployer-git --save</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>My Gallery</title>
+      <link href="/2021/10/27/my-gallery/"/>
+      <url>/2021/10/27/my-gallery/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一个帖子</title>
+      <link href="/2021/10/27/di-yi-ge-tie-zi/"/>
+      <url>/2021/10/27/di-yi-ge-tie-zi/</url>
+      
+        <content type="html"><![CDATA[<p>下面引入一段名言.</p><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p><footer><strong>David Levithan</strong><cite>wide Awake</cite></footer></blockquote><p>下面尝试代码块的引入.</p><pre class="line-numbers language-" data-language=""><div class="caption"><span>python</span></div><code class="language-">print("hello,world")a = 3b = 4print(a+b)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>超链接.</p><blockquote><p>随便搬运的一个博客链接,测试.</p><footer><strong>pygame</strong><cite><a href="https://blog.csdn.net/weixin_43649691/article/details/120947882?utm_medium=distribute.pc_category.none-task-blog-hot-3.nonecase&amp;depth_1-utm_source=distribute.pc_category.none-task-blog-hot-3.nonecase">python开发小游戏</a></cite></footer></blockquote><p>然后测试图片插入的操作.</p><ul><li>本地图片插入(存放在source/images目录下)</li></ul><p><img src="/images/beauty00.jpg"></p><ul><li>使用图床</li></ul><p><img src="https://i.imgur.com/EtPwnr7.jpg" alt="beauty"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2021/10/26/hello-world/"/>
+      <url>/2021/10/26/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
