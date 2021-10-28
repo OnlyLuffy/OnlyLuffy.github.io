@@ -471,14 +471,14 @@
 <ul>
 <li><h4 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git安装</a></h4></li>
 </ul>
-<p>索性一直下一步就好.✔️</p>
+<p>索性一直下一步就好.✔<br>就最后一步添加路径选择Use Git from the Windows Command Prompt.<br>这样就可以在命令行里使用git.</p>
 <ul>
 <li><h4 id="绑定Github"><a href="#绑定Github" class="headerlink" title="绑定Github"></a>绑定Github</h4></li>
 </ul>
 <p><code>ssh-keygen -t rsa</code></p>
 <p>生成密钥, 回车确认.</p>
 <p>.ssh目录下就生成了这么个东西</p>
-<p><img src="_posts%5Chexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0-%E7%AE%80%E7%95%A5%5Cscreenshot00.png"></p>
+<p><img src="source/_posts/hexo-github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0-%E7%AE%80%E7%95%A5/screenshot00.png"></p>
 <p>然后要添加到github.在账户展开找到Settings, 然后有个SSH and GPG keys.</p>
 <p>把pub文件里的内容赋值到key中.随便叫个名字保存.</p>
 <p><code>ssh -T git@github.com</code></p>
@@ -491,8 +491,8 @@
 <p>安装后在命令行验证:</p>
 <p><code>node -v         npm -v</code></p>
 <h5 id="设置npm在安装全局模块时的路径和环境变量"><a href="#设置npm在安装全局模块时的路径和环境变量" class="headerlink" title="设置npm在安装全局模块时的路径和环境变量"></a>设置npm在安装全局模块时的路径和环境变量</h5><p>nodejs 文件夹中新建两个空文件夹 node_cache、node_global</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">npm config set prefix "D:\nodejs\node_global"
-npm config set cache "D:\nodejs\node_cache"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> prefix <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_global"</span>
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"D:<span class="token entity" title="\n">\n</span>odejs<span class="token entity" title="\n">\n</span>ode_cache"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>配置环境变量 “NODE_PATH” 值为”..\nodejs\node_global\node_modules”</p>
 <p>然后编辑用户变量里的Path，将相应npm的路径改为：…\nodejs\node_global</p>
@@ -511,10 +511,10 @@ npm config set cache "D:\nodejs\node_cache"<span aria-hidden="true" class="line-
 <p>**如果显示 hexo command not found.**✖️😥</p>
 <p>我采用的方式是给它配个环境变量, 在Path里加,值为”…/hexo/bin”.</p>
 <p>然后就是会常用到的4个命令</p>
-<pre class="line-numbers language-text" data-language="text"><code class="language-text">hexo clean   #清除缓存文件 db.json 和已生成的静态文件 public
-hexo g       #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)
-hexo d       #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)
-hexo s		 # server 启动本地服务器 localhost:4000即可访问<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean   <span class="token comment">#清除缓存文件 db.json 和已生成的静态文件 public</span>
+hexo g       <span class="token comment">#生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)</span>
+hexo d       <span class="token comment">#自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)</span>
+hexo s		 <span class="token comment"># server 启动本地服务器 localhost:4000即可访问</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>将hexo部署到github,</p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/AinUser/article/details/77609180">参考博客1</a></p>
