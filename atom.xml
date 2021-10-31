@@ -6,7 +6,7 @@
   <link href="https://onlyluffy.github.io/atom.xml" rel="self"/>
   
   <link href="https://onlyluffy.github.io/"/>
-  <updated>2021-10-30T15:26:10.740Z</updated>
+  <updated>2021-10-31T05:37:43.666Z</updated>
   <id>https://onlyluffy.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>matery主题美化</title>
+    <link href="https://onlyluffy.github.io/posts/38927.html"/>
+    <id>https://onlyluffy.github.io/posts/38927.html</id>
+    <published>2021-10-31T05:20:24.000Z</published>
+    <updated>2021-10-31T05:37:43.666Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;樱花飘落特效&quot;&gt;&lt;a href=&quot;#樱花飘落特效&quot; class=&quot;headerlink&quot; title=&quot;樱花飘落特效&quot;&gt;&lt;/a&gt;樱花飘落特效&lt;/h3&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="启航" scheme="https://onlyluffy.github.io/categories/%E5%90%AF%E8%88%AA/"/>
+    
+    
+    <category term="博客优化" scheme="https://onlyluffy.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>waline评论部署</title>
+    <link href="https://onlyluffy.github.io/posts/19631.html"/>
+    <id>https://onlyluffy.github.io/posts/19631.html</id>
+    <published>2021-10-31T03:43:37.000Z</published>
+    <updated>2021-10-31T05:37:29.611Z</updated>
+    
+    
+    
+    
+    <category term="启航" scheme="https://onlyluffy.github.io/categories/%E5%90%AF%E8%88%AA/"/>
+    
+    
+    <category term="博客优化" scheme="https://onlyluffy.github.io/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>picgo+七牛云图床demo</title>
