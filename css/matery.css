@@ -551,10 +551,11 @@ header .go-back i {
     height: 40vh !important;
 }
 
-.bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
-}
+/*首页颜色渐变动画*/
+/*.bg-cover:after {*/
+/*    -webkit-animation: rainbow 60s infinite;*/
+/*    animation: rainbow 60s infinite;*/
+/*}*/
 
 .bg-cover:before,
 .bg-cover:after {
@@ -1299,7 +1300,7 @@ thead {
 
 .chip-container .chip-active {
     color: #FFF !important;
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;
+    background: linear-gradient(to bottom right, #ffa000 0%, #f6b2b5 100%) !important;
     box-shadow: 2px 5px 10px #aaa !important;
 }
 
@@ -1318,7 +1319,7 @@ thead {
 
 .chip-container .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+    background: linear-gradient(to right, #2962FF 0%, #67cdcc 100%) !important;
 }
 
 .chip .tag-length {
@@ -1964,7 +1965,7 @@ footer .copy-right {
 }
 
 .center-caption {
-    color: #525f7f;
+    color: #ba68c8;
     padding: 5px;
     border-bottom: 1px solid #d9d9d9;
 }
