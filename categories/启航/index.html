@@ -464,10 +464,16 @@
 </div>
 
 
+<!--<script>-->
+<!--    // 每天切换 banner 图.  Switch banner image every day.-->
+<!--    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';-->
+<!--    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');-->
+<!--</script>-->
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    // 每小时切换banner图. 存放了rick[1-16].jpg.
+    var number1 = new Date().getHours();
+    number1 = number1 % 16 + 1;
+    var bannerUrl = "/medias/banner/rick" + number1 + '.jpg';
 </script>
 
 
