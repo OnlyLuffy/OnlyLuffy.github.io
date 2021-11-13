@@ -42,6 +42,14 @@ body {
     overflow-y: auto;
 }
 
+/*body {*/
+/*    !* background-color: #eaeaea; *!*/
+/*    background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;*/
+/*    background-attachment: fixed;*/
+/*    margin: 0;*/
+/*    color: #7F95D1;*/
+/*}*/
+
 h1 {
     margin: 48px 0 22px -5px;
     font-size: 2.0rem;
@@ -241,8 +249,11 @@ mark {
     margin-bottom: 0;
 }
 
+/*导航栏颜色*/
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #56b6e7 0%, #a7ffeb 100%);
+/*透明效果 值范围 0~1，看情况自己修改*/
+    opacity: 0.8;
 }
 
 .text-color {
@@ -257,8 +268,8 @@ mark {
 .progress-bar {
     height: 10px;
     position: fixed;
-    top: 64px;
-    /*bottom: 0;*/
+    /*top: 64px;*/
+    bottom: 0;
     z-index: 300;
     background: linear-gradient(to right, #3d5afe 0%, #e1bee7 100%);
     opacity: 0.8;
@@ -568,11 +579,10 @@ header .go-back i {
     display: block;
     left: 0;
     top: 0;
-    content: "";
-
+    /*content: "";*/
     /*添加测试*/
-    backdrop-filter: blur(0.1vw);
-    background: rgba(0, 0, 0, 0.1);
+    /*backdrop-filter: blur(0.1vw);*/
+    /*background: rgba(0, 0, 0, 0.1);*/
 }
 
 .bg-cover .container {
@@ -2145,4 +2155,19 @@ footer .copy-right {
     height: 50px;
     padding: 0;
     margin: 0;
+}
+
+/*滚动条添加*/
+::-webkit-scrollbar-thumb {
+    background-color: #c6ff00;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: #00e5ff;
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 16px;
+    height: 10px;
 }
