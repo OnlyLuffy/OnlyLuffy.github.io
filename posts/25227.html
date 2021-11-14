@@ -446,7 +446,7 @@
 <p><code>ssh-keygen -t rsa</code></p>
 <p>生成密钥, 回车确认.</p>
 <p>.ssh目录下就生成了这么个东西</p>
-<p><img src="/images/screenshot00.png"><br>然后要添加到github.在账户展开找到Settings, 然后有个SSH and GPG keys.</p>
+<p><img src="/images/wait.png" data-original="/images/screenshot00.png"><br>然后要添加到github.在账户展开找到Settings, 然后有个SSH and GPG keys.</p>
 <p>把pub文件里的内容赋值到key中.随便叫个名字保存.</p>
 <p><code>ssh -T git@github.com</code></p>
 <p>输入验证,yes 绑定成功,一般不会出问题.</p>
@@ -500,7 +500,7 @@ hexo s		 <span class="token comment"># server 启动本地服务器 localhost:40
 </ul>
 <p>在博客根目录下打开git bash,</p>
 <p><code>npm install hexo-deployer-git --save</code></p>
-<p><img src="/images/screenshot01.png"></p>
+<p><img src="/images/wait.png" data-original="/images/screenshot01.png"></p>
 <p>这个置为true时, 每次新建一个文章</p>
 <p>hexo new post “xxx”</p>
 <p>会在同级目录下创建一个同名文件夹, 把文章里的图片放进去,</p>
@@ -1340,6 +1340,12 @@ $(function () {
             document.write(script.outerHTML);
         </script>
     
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":160,"height":280},"mobile":{"show":true},"react":{"opacity":0.8}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":160,"height":280},"mobile":{"show":true},"react":{"opacity":0.8}});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

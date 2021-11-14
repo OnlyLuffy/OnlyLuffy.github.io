@@ -448,21 +448,21 @@
 <p>填写信息, 存储区域z2(华南).</p>
 <p>基本没问题, 保存后, 图片即可拖拽上传图片.</p>
 <p><strong>注: 发现个问题, 我设置的网址用的 https, 上传到图床实际保存的是 http开头, 所以改了一下.</strong></p>
-<h4 id="demo01"><a href="#demo01" class="headerlink" title="demo01"></a>demo01</h4><p><img src="http://r1s795mc7.hn-bkt.clouddn.com/luffy_picgo/luffy10.jpg" alt="demo1"></p>
-<h4 id="demo02"><a href="#demo02" class="headerlink" title="demo02"></a>demo02</h4><p><img src="http://r1s795mc7.hn-bkt.clouddn.com/luffy_picgo/luffy13.jpg" alt="demo2"></p>
+<h4 id="demo01"><a href="#demo01" class="headerlink" title="demo01"></a>demo01</h4><p><img src="/images/wait.png" data-original="http://r1s795mc7.hn-bkt.clouddn.com/luffy_picgo/luffy10.jpg" alt="demo1"></p>
+<h4 id="demo02"><a href="#demo02" class="headerlink" title="demo02"></a>demo02</h4><p><img src="/images/wait.png" data-original="http://r1s795mc7.hn-bkt.clouddn.com/luffy_picgo/luffy13.jpg" alt="demo2"></p>
 <ul>
 <li><h3 id="typora-picgo-图床"><a href="#typora-picgo-图床" class="headerlink" title="typora+picgo+图床"></a>typora+picgo+图床</h3></li>
 </ul>
 <p>即typora每次保存图片都是上传图床, 而不是默认的本地存储.</p>
-<p><img src="http://r1s795mc7.hn-bkt.clouddn.com/luffy_picgo/image-20211030171550735.png" alt="demo3"></p>
+<p><img src="/images/wait.png" data-original="http://r1s795mc7.hn-bkt.clouddn.com/luffy_picgo/image-20211030171550735.png" alt="demo3"></p>
 <p>步骤很简单.✔️✔️✔️方便多了.</p>
 <p>淦,图片在博客上莫名加载不出来, 手机上夸克能加载出来图片, 麻了. 🐒🐒🐒🐒🐒</p>
 <ul>
 <li><h3 id="换阵地-SM-MS图床"><a href="#换阵地-SM-MS图床" class="headerlink" title="换阵地, SM.MS图床"></a>换阵地, SM.MS图床</h3></li>
 </ul>
 <p>这个挺快的, 注册之后直接用,  绑定只需要个API token.😋😋一步到胃.</p>
-<p><img src="https://i.loli.net/2021/10/31/IMLwdBqQVFznHTy.jpg" alt="demo01"></p>
-<p><img src="https://i.loli.net/2021/10/31/bzLgxo5IYv2uSsE.png" alt="demo02"></p>
+<p><img src="/images/wait.png" data-original="https://i.loli.net/2021/10/31/IMLwdBqQVFznHTy.jpg" alt="demo01"></p>
+<p><img src="/images/wait.png" data-original="https://i.loli.net/2021/10/31/bzLgxo5IYv2uSsE.png" alt="demo02"></p>
 
                 
             </div>
@@ -1285,6 +1285,12 @@ $(function () {
             document.write(script.outerHTML);
         </script>
     
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":160,"height":280},"mobile":{"show":true},"react":{"opacity":0.8}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":160,"height":280},"mobile":{"show":true},"react":{"opacity":0.8}});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
