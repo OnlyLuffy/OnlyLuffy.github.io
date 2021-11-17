@@ -6,7 +6,7 @@
   <link href="https://luffyblog.top/atom.xml" rel="self"/>
   
   <link href="https://luffyblog.top/"/>
-  <updated>2021-11-17T14:55:01.565Z</updated>
+  <updated>2021-11-17T15:04:23.535Z</updated>
   <id>https://luffyblog.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pyExcel</title>
+    <link href="https://luffyblog.top/posts/25204.html"/>
+    <id>https://luffyblog.top/posts/25204.html</id>
+    <published>2021-11-17T15:01:55.000Z</published>
+    <updated>2021-11-17T15:04:23.535Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;excel操作&quot;&gt;&lt;a href=&quot;#excel操作&quot; class=&quot;headerlink&quot; title=&quot;excel操作&quot;&gt;&lt;/a&gt;excel操作&lt;/h1&gt;&lt;h3 id=&quot;python-format&quot;&gt;&lt;a href=&quot;#python-format&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://luffyblog.top/categories/python/"/>
+    
+    
+    <category term="瞎玩" scheme="https://luffyblog.top/tags/%E7%9E%8E%E7%8E%A9/"/>
+    
+  </entry>
   
   <entry>
     <title>Js入土node</title>
