@@ -6,7 +6,7 @@
   <link href="https://luffyblog.top/atom.xml" rel="self"/>
   
   <link href="https://luffyblog.top/"/>
-  <updated>2021-11-18T02:09:56.442Z</updated>
+  <updated>2021-11-19T10:05:44.443Z</updated>
   <id>https://luffyblog.top/</id>
   
   <author>
@@ -17,23 +17,69 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>linux指令03</title>
+    <link href="https://luffyblog.top/posts/63818.html"/>
+    <id>https://luffyblog.top/posts/63818.html</id>
+    <published>2021-11-19T09:57:07.000Z</published>
+    <updated>2021-11-19T10:05:44.443Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;apt包管理工具&quot;&gt;&lt;a href=&quot;#apt包管理工具&quot; class=&quot;headerlink&quot; title=&quot;apt包管理工具&quot;&gt;&lt;/a&gt;apt包管理工具&lt;/h2&gt;&lt;h3 id=&quot;apt-get&quot;&gt;&lt;a href=&quot;#apt-get&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://luffyblog.top/categories/Linux/"/>
+    
+    
+    <category term="干货指令" scheme="https://luffyblog.top/tags/%E5%B9%B2%E8%B4%A7%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux指令02</title>
+    <link href="https://luffyblog.top/posts/14731.html"/>
+    <id>https://luffyblog.top/posts/14731.html</id>
+    <published>2021-11-19T09:57:04.000Z</published>
+    <updated>2021-11-19T10:05:05.036Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;命令执行顺序控制&quot;&gt;&lt;a href=&quot;#命令执行顺序控制&quot; class=&quot;headerlink&quot; title=&quot;命令执行顺序控制&quot;&gt;&lt;/a&gt;命令执行顺序控制&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h4 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://luffyblog.top/categories/Linux/"/>
+    
+    
+    <category term="干货指令" scheme="https://luffyblog.top/tags/%E5%B9%B2%E8%B4%A7%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>linux指令01</title>
     <link href="https://luffyblog.top/posts/14539.html"/>
     <id>https://luffyblog.top/posts/14539.html</id>
     <published>2021-11-18T02:04:20.000Z</published>
-    <updated>2021-11-18T02:09:56.442Z</updated>
+    <updated>2021-11-18T05:12:42.300Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;who 显示已登录用户的信息.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;who -a        (-all 显示目前用户的详细信息)&lt;/li&gt;
-&lt;li&gt;who -q        (列出所有登录用户登录名, 用户数量)&lt;/li&gt;
-&lt;li&gt;who -u       </summary>
+    <summary type="html">&lt;h1 id=&quot;蓝桥云课实验楼linux打基础&quot;&gt;&lt;a href=&quot;#蓝桥云课实验楼linux打基础&quot; class=&quot;headerlink&quot; title=&quot;蓝桥云课实验楼linux打基础&quot;&gt;&lt;/a&gt;蓝桥云课实验楼linux&lt;a</summary>
         
       
     
