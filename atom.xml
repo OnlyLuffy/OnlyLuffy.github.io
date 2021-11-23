@@ -6,7 +6,7 @@
   <link href="https://luffyblog.top/atom.xml" rel="self"/>
   
   <link href="https://luffyblog.top/"/>
-  <updated>2021-11-23T15:54:05.583Z</updated>
+  <updated>2021-11-23T15:57:31.539Z</updated>
   <id>https://luffyblog.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://luffyblog.top/posts/58929.html"/>
     <id>https://luffyblog.top/posts/58929.html</id>
     <published>2021-11-23T15:49:23.000Z</published>
-    <updated>2021-11-23T15:54:05.583Z</updated>
+    <updated>2021-11-23T15:57:31.539Z</updated>
     
     
       
@@ -34,27 +34,10 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>java碎碎念</title>
-    <link href="https://luffyblog.top/posts/53357.html"/>
-    <id>https://luffyblog.top/posts/53357.html</id>
-    <published>2021-11-19T14:12:53.293Z</published>
-    <updated>2021-11-20T03:31:21.986Z</updated>
+    <category term="Linux" scheme="https://luffyblog.top/categories/Linux/"/>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/wait.png&quot; data-original=&quot;https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211120001314183.png&quot;</summary>
-        
-      
-    
-    
-    
+    <category term="ubuntu" scheme="https://luffyblog.top/tags/ubuntu/"/>
     
   </entry>
   
