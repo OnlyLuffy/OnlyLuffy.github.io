@@ -6,7 +6,7 @@
   <link href="https://luffyblog.top/atom.xml" rel="self"/>
   
   <link href="https://luffyblog.top/"/>
-  <updated>2021-11-23T16:24:06.539Z</updated>
+  <updated>2021-11-24T04:11:09.545Z</updated>
   <id>https://luffyblog.top/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python爬虫日记</title>
+    <link href="https://luffyblog.top/posts/4013.html"/>
+    <id>https://luffyblog.top/posts/4013.html</id>
+    <published>2021-11-23T16:31:25.000Z</published>
+    <updated>2021-11-24T04:11:09.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;记录这两天的🐾🐛初学过程&lt;/p&gt;
+&lt;h2 id=&quot;🐾豆瓣top250影名&quot;&gt;&lt;a href=&quot;#🐾豆瓣top250影名&quot; class=&quot;headerlink&quot; title=&quot;🐾豆瓣top250影名&quot;&gt;&lt;/a&gt;🐾豆瓣top250影名&lt;/h2&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://luffyblog.top/categories/python/"/>
+    
+    
+    <category term="就是玩儿" scheme="https://luffyblog.top/tags/%E5%B0%B1%E6%98%AF%E7%8E%A9%E5%84%BF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ubuntu虚拟机安装</title>
     <link href="https://luffyblog.top/posts/58929.html"/>
     <id>https://luffyblog.top/posts/58929.html</id>
     <published>2021-11-23T15:49:23.000Z</published>
-    <updated>2021-11-23T16:24:06.539Z</updated>
+    <updated>2021-11-23T16:29:00.414Z</updated>
     
     
       
@@ -122,14 +148,15 @@
     <link href="https://luffyblog.top/posts/21918.html"/>
     <id>https://luffyblog.top/posts/21918.html</id>
     <published>2021-11-17T15:10:15.000Z</published>
-    <updated>2021-11-19T14:00:47.178Z</updated>
+    <updated>2021-11-24T03:57:44.348Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;牛客刷题杂技&quot;&gt;&lt;a href=&quot;#牛客刷题杂技&quot; class=&quot;headerlink&quot; title=&quot;牛客刷题杂技&quot;&gt;&lt;/a&gt;牛客刷题杂技&lt;/h1&gt;&lt;h2 id=&quot;新生代-老年代-永久代&quot;&gt;&lt;a href=&quot;#新生代-老年代-永久代&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;新生代-老年代-永久代&quot;&gt;&lt;a href=&quot;#新生代-老年代-永久代&quot; class=&quot;headerlink&quot; title=&quot;新生代,老年代,永久代&quot;&gt;&lt;/a&gt;新生代,老年代,永久代&lt;/h2&gt;&lt;p&gt;第一次听这个几个词😅了解一下。&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
         
       
     
@@ -172,7 +199,7 @@
     <link href="https://luffyblog.top/posts/26055.html"/>
     <id>https://luffyblog.top/posts/26055.html</id>
     <published>2021-11-17T14:48:12.000Z</published>
-    <updated>2021-11-17T14:55:01.565Z</updated>
+    <updated>2021-11-24T03:09:32.643Z</updated>
     
     
       
