@@ -6,7 +6,7 @@
   <link href="https://luffyblog.top/atom.xml" rel="self"/>
   
   <link href="https://luffyblog.top/"/>
-  <updated>2021-11-24T04:57:44.675Z</updated>
+  <updated>2021-11-29T05:29:09.695Z</updated>
   <id>https://luffyblog.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux04</title>
+    <link href="https://luffyblog.top/posts/13507.html"/>
+    <id>https://luffyblog.top/posts/13507.html</id>
+    <published>2021-11-29T05:19:08.000Z</published>
+    <updated>2021-11-29T05:29:09.695Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Linux日志系统&quot;&gt;&lt;a href=&quot;#Linux日志系统&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://luffyblog.top/categories/Linux/"/>
+    
+    
+    <category term="Shell" scheme="https://luffyblog.top/tags/Shell/"/>
+    
+  </entry>
   
   <entry>
     <title>python爬虫日记</title>
