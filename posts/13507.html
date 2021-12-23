@@ -1,5 +1,634 @@
-<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="linux04, java,python,mysql,machine learning,hexo,HTML,CSS等"><meta name="description" content="我准备好啦,我准备好啦"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>linux04 | 路飞的小破站</title><link rel="icon" type="image/png" href="/favicon.png"><link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css"><link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" type="text/css" href="/libs/aos/aos.css"><link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css"><link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" type="text/css" href="/css/matery.css"><link rel="stylesheet" type="text/css" href="/css/my.css"><script src="/libs/jquery/jquery.min.js"></script><script src="/js/autohidenav.js"></script><meta name="generator" content="Hexo 5.4.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/atom.xml" title="路飞的小破站" type="application/atom+xml"></head><style>body{background-image:url(https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/beauty70.png);background-repeat:no-repeat;background-size:cover;background-attachment:fixed}</style><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><div><img src="/medias/logo.png" class="logo-img" alt="LOGO"> <span class="logo-span">路飞的小破站</span></div></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom:.6"></i> <span>关于</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-comments" style="zoom:.6"></i> <span>留言墙</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-boxes" style="zoom:.6"></i> <span>杂物箱</span> <i class="fas fa-chevron-down" aria-hidden="true" style="zoom:.6"></i></a><ul class="sub-nav menus_item_child"><li><a href="/world"><i class="fas fa-globe" style="margin-top:-20px;zoom:.6"></i> <span>world</span></a></li></ul></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="/medias/logo.png" class="logo-img circle responsive-img"><div class="logo-name">路飞的小破站</div><div class="logo-desc">我准备好啦,我准备好啦</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> 关于</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-comments"></i> 留言墙</a></li><li class="m-nav-item"><a href="javascript:;"><i class="fa-fw fas fa-boxes"></i> 杂物箱 <span class="m-icon"><i class="fas fa-chevron-right"></i></span></a><ul><li><a href="/world" style="margin-left:75px"><i class="fa fas fa-globe" style="position:absolute;left:50px"></i> <span>world</span></a></li></ul></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/beauty297.png)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">linux04</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/Shell/"><span class="chip bg-color">Shell</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Linux/" class="post-category">Linux</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp; 2021-11-29</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp; 2021-11-29</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp; 3.3k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp; 12 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><link rel="stylesheet" href="/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><h2 id="Linux日志系统"><a href="#Linux日志系统" class="headerlink" title="Linux日志系统"></a>Linux日志系统</h2><blockquote><p>日志数据可以是有价值的信息宝库，也可以是毫无价值的数据泥潭。它可以记录下系统产生的所有行为，并按照某种规范表达出来。我们可以使用日志系统所记录的信息为系统进行排错，优化系统的性能，或者根据这些信息调整系统的行为。收集你想要的数据，分析出有价值的信息，可以提高系统、产品的安全性，还可以帮助开发完善代码，优化产品。日志会成为在事故发生后查明“发生了什么”的一个很好的“取证”信息来源。日志可以为审计进行审计跟踪。</p></blockquote><p>常见日志一般存放在 <code>/var/log</code> 中。</p><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132520811.png" alt="/var/log"></p><ul><li>系统日志</li></ul><table><thead><tr><th>常见的系统日志</th><th>记录信息</th></tr></thead><tbody><tr><td>alternatives.log</td><td>系统的一些更新替代信息记录</td></tr><tr><td>apport.log</td><td>应用程序崩溃信息记录</td></tr><tr><td>apt/history.log</td><td>使用 apt-get 安装卸载软件的信息记录</td></tr><tr><td>apt/term.log</td><td>使用 apt-get 时的具体操作，如 package 的下载、打开等</td></tr><tr><td>auth.log</td><td>登录认证的信息记录</td></tr><tr><td>boot.log</td><td>系统启动时的程序服务的日志信息</td></tr><tr><td>btmp</td><td>错误的信息记录</td></tr><tr><td>Consolekit/history</td><td>控制台的信息记录</td></tr><tr><td>dist-upgrade</td><td>dist-upgrade 这种更新方式的信息记录</td></tr><tr><td>dmesg</td><td>启动时，显示屏幕上内核缓冲信息，与硬件有关的信息</td></tr><tr><td>dpkg.log</td><td>dpkg 命令管理包的日志。</td></tr><tr><td>faillog</td><td>用户登录失败详细信息记录</td></tr><tr><td>fontconfig.log</td><td>与字体配置有关的信息记录</td></tr><tr><td>kern.log</td><td>内核产生的信息记录，在自己修改内核时有很大帮助</td></tr><tr><td>lastlog</td><td>用户的最近信息记录</td></tr><tr><td>wtmp</td><td>登录信息的记录。wtmp 可以找出谁正在进入系统，谁使用命令显示这个文件或信息等</td></tr><tr><td>syslog</td><td>系统信息记录</td></tr></tbody></table><ul><li>应用日志</li></ul><h3 id="文件基本属性"><a href="#文件基本属性" class="headerlink" title="文件基本属性"></a>文件基本属性</h3><ul><li>chown(change owner): 修改所属用户与组。</li><li>chmod(change mode): 修改用户的权限。</li></ul><p>ll 或 ls -l 命令来显示一个文件的属性以及所属的用户和组。</p><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132610278.png" alt="文件属性"></p><p>文件类型（file type）.</p><ul><li>当为 <strong>d</strong> 则是目录</li><li>当为 <strong>-</strong> 则是文件；</li><li>若是 <strong>l</strong> 则表示为链接文档(link file)；</li><li>若是 <strong>b</strong> 则表示为装置文件里面的可供储存的接口设备(可随机存取装置)；</li><li>若是 <strong>c</strong> 则表示为装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)。</li></ul><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132635257.png"></p><h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><h3 id="第一个Shell脚本"><a href="#第一个Shell脚本" class="headerlink" title="第一个Shell脚本"></a>第一个Shell脚本</h3><p><strong>#!</strong> 告诉系统其后路径所指定的程序即是解释此脚本文件的 Shell 程序。</p><p>vim 编写一个 test.sh脚本</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
-<span class="token builtin class-name">echo</span> <span class="token string">"Hello World !"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>作为可执行程序， <code>chmod +x</code></p><p>一直疑惑的点， 为啥运行需要 **./**而不是直接写文件名</p><p>🐖①：一定要写成 <strong>./test.sh</strong>，而不是 <strong>test.sh</strong>，运行其它二进制的程序也一样，直接写 test.sh，linux 系统会去 PATH 里寻找有没有叫 test.sh 的，而只有 /bin, /sbin, /usr/bin，/usr/sbin 等在 PATH 里，你的当前目录通常不在 PATH 里，所以写成 test.sh 是会找不到命令的，要用 ./test.sh 告诉系统说，就在当前目录找。</p><h3 id="定义Shell变量"><a href="#定义Shell变量" class="headerlink" title="定义Shell变量"></a>定义Shell变量</h3><ul><li>注意：变量名和等号之间不能有空格！🤡</li><li>命名只能使用英文字母，数字，下划线，不能以数字开头，可以下划线开头。</li></ul><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132706167.png"></p><p>运行结果：</p><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132721939.png"></p><h4 id="使用变量，就在名字前加"><a href="#使用变量，就在名字前加" class="headerlink" title="使用变量，就在名字前加 $"></a>使用变量，就在名字前加 $</h4><ul><li>还可以 ${luffy} 等价于 $luffy, 这样做是为了识别变量名的边界。</li></ul><h4 id="只读变量"><a href="#只读变量" class="headerlink" title="只读变量"></a>只读变量</h4><p><strong>readonly</strong></p><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002037808.png"></p><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002103217.png"></p><h4 id="删除变量"><a href="#删除变量" class="headerlink" title="删除变量"></a>删除变量</h4><p><strong>unset</strong> <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002226920.png"></p><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002309485.png"></p><p>注意：变量被删除后不能再次使用，unset命令不能删除只读变量。</p><h3 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h3><ul><li><strong>局部变量</strong>:在脚本或命令中定义，尽在当前shell实例中有效，其他shell启动的程序不能访问局部变量。</li><li><strong>环境变量</strong>：所有的程序，包括shell启动的程序，都能访问环境变量，有些程序需要环境变量来保证其正常运行。必要的时候shell脚本也可以定义环境变量。</li><li><strong>shell变量</strong>: shell变量是由shell程序设置的特殊变量。shell变量中有一部分是环境变量，有一部分是局部变量，这些变量保证了shell的正常运行。</li></ul><h3 id="Shell字符串"><a href="#Shell字符串" class="headerlink" title="Shell字符串"></a>Shell字符串</h3><ul><li><strong>单引号</strong><ul><li>单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的</li><li>不能出现单独一个的单引号（对单引号使用转义符后也不行），但可以成对出现，作为字符串拼接使用</li></ul></li><li><strong>双引号</strong><ul><li>双引号里可以由变量</li><li>双引号里可以出现转义字符</li></ul></li></ul><h4 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="linux04, java,python,mysql,machine learning,hexo,HTML,CSS等">
+    <meta name="description" content="我准备好啦,我准备好啦">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>linux04 | 路飞的小破站</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<!--    隐藏导航栏-->
+    
+        <script src="/js/autohidenav.js"></script>
+    
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="路飞的小破站" type="application/atom+xml">
+</head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/beauty70.png);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+<!--                    懒加载logo点击不会跳首页解决办法 加个<div> -->
+                    <div>
+                        
+                            <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                        
+                        <span class="logo-span">路飞的小破站</span>
+                    </div>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言墙</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-boxes" style="zoom: 0.6;"></i>
+      
+      <span>杂物箱</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/world">
+          
+          <i class="fas fa-globe" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>world</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">路飞的小破站</div>
+        <div class="logo-desc">
+            
+            我准备好啦,我准备好啦
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言墙
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-boxes"></i>
+			
+			杂物箱
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  >
+              
+                <li>
+
+                  <a href="/world " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-globe" style="position: absolute;left:50px" ></i>
+			      
+		          <span>world</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/beauty297.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">linux04</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Shell/">
+                                <span class="chip bg-color">Shell</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Linux/" class="post-category">
+                                Linux
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-11-29
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-11-29
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    12 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Linux日志系统"><a href="#Linux日志系统" class="headerlink" title="Linux日志系统"></a>Linux日志系统</h2><blockquote>
+<p>日志数据可以是有价值的信息宝库，也可以是毫无价值的数据泥潭。它可以记录下系统产生的所有行为，并按照某种规范表达出来。我们可以使用日志系统所记录的信息为系统进行排错，优化系统的性能，或者根据这些信息调整系统的行为。收集你想要的数据，分析出有价值的信息，可以提高系统、产品的安全性，还可以帮助开发完善代码，优化产品。日志会成为在事故发生后查明“发生了什么”的一个很好的“取证”信息来源。日志可以为审计进行审计跟踪。</p>
+</blockquote>
+<p>常见日志一般存放在 <code>/var/log</code> 中。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132520811.png" alt="/var/log"></p>
+<ul>
+<li>系统日志</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>常见的系统日志</th>
+<th>记录信息</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>alternatives.log</td>
+<td>系统的一些更新替代信息记录</td>
+</tr>
+<tr>
+<td>apport.log</td>
+<td>应用程序崩溃信息记录</td>
+</tr>
+<tr>
+<td>apt/history.log</td>
+<td>使用 apt-get 安装卸载软件的信息记录</td>
+</tr>
+<tr>
+<td>apt/term.log</td>
+<td>使用 apt-get 时的具体操作，如 package 的下载、打开等</td>
+</tr>
+<tr>
+<td>auth.log</td>
+<td>登录认证的信息记录</td>
+</tr>
+<tr>
+<td>boot.log</td>
+<td>系统启动时的程序服务的日志信息</td>
+</tr>
+<tr>
+<td>btmp</td>
+<td>错误的信息记录</td>
+</tr>
+<tr>
+<td>Consolekit/history</td>
+<td>控制台的信息记录</td>
+</tr>
+<tr>
+<td>dist-upgrade</td>
+<td>dist-upgrade 这种更新方式的信息记录</td>
+</tr>
+<tr>
+<td>dmesg</td>
+<td>启动时，显示屏幕上内核缓冲信息，与硬件有关的信息</td>
+</tr>
+<tr>
+<td>dpkg.log</td>
+<td>dpkg 命令管理包的日志。</td>
+</tr>
+<tr>
+<td>faillog</td>
+<td>用户登录失败详细信息记录</td>
+</tr>
+<tr>
+<td>fontconfig.log</td>
+<td>与字体配置有关的信息记录</td>
+</tr>
+<tr>
+<td>kern.log</td>
+<td>内核产生的信息记录，在自己修改内核时有很大帮助</td>
+</tr>
+<tr>
+<td>lastlog</td>
+<td>用户的最近信息记录</td>
+</tr>
+<tr>
+<td>wtmp</td>
+<td>登录信息的记录。wtmp 可以找出谁正在进入系统，谁使用命令显示这个文件或信息等</td>
+</tr>
+<tr>
+<td>syslog</td>
+<td>系统信息记录</td>
+</tr>
+</tbody></table>
+<ul>
+<li>应用日志</li>
+</ul>
+<h3 id="文件基本属性"><a href="#文件基本属性" class="headerlink" title="文件基本属性"></a>文件基本属性</h3><ul>
+<li>chown(change owner): 修改所属用户与组。</li>
+<li>chmod(change mode): 修改用户的权限。</li>
+</ul>
+<p>ll 或 ls -l 命令来显示一个文件的属性以及所属的用户和组。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132610278.png" alt="文件属性"></p>
+<p>文件类型（file type）.</p>
+<ul>
+<li>当为 <strong>d</strong> 则是目录</li>
+<li>当为 <strong>-</strong> 则是文件；</li>
+<li>若是 <strong>l</strong> 则表示为链接文档(link file)；</li>
+<li>若是 <strong>b</strong> 则表示为装置文件里面的可供储存的接口设备(可随机存取装置)；</li>
+<li>若是 <strong>c</strong> 则表示为装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)。</li>
+</ul>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132635257.png"></p>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><h3 id="第一个Shell脚本"><a href="#第一个Shell脚本" class="headerlink" title="第一个Shell脚本"></a>第一个Shell脚本</h3><p><strong>#!</strong> 告诉系统其后路径所指定的程序即是解释此脚本文件的 Shell 程序。</p>
+<p>vim 编写一个 test.sh脚本</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"Hello World !"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>作为可执行程序， <code>chmod +x</code></p>
+<p>一直疑惑的点， 为啥运行需要 **./**而不是直接写文件名</p>
+<p>🐖①：一定要写成 <strong>./test.sh</strong>，而不是 <strong>test.sh</strong>，运行其它二进制的程序也一样，直接写 test.sh，linux 系统会去 PATH 里寻找有没有叫 test.sh 的，而只有 /bin, /sbin, /usr/bin，/usr/sbin 等在 PATH 里，你的当前目录通常不在 PATH 里，所以写成 test.sh 是会找不到命令的，要用 ./test.sh 告诉系统说，就在当前目录找。</p>
+<h3 id="定义Shell变量"><a href="#定义Shell变量" class="headerlink" title="定义Shell变量"></a>定义Shell变量</h3><ul>
+<li>注意：变量名和等号之间不能有空格！🤡</li>
+<li>命名只能使用英文字母，数字，下划线，不能以数字开头，可以下划线开头。</li>
+</ul>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132706167.png"></p>
+<p>运行结果：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129132721939.png"></p>
+<h4 id="使用变量，就在名字前加"><a href="#使用变量，就在名字前加" class="headerlink" title="使用变量，就在名字前加 $"></a>使用变量，就在名字前加 $</h4><ul>
+<li>还可以 ${luffy} 等价于 $luffy, 这样做是为了识别变量名的边界。</li>
+</ul>
+<h4 id="只读变量"><a href="#只读变量" class="headerlink" title="只读变量"></a>只读变量</h4><p><strong>readonly</strong></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002037808.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002103217.png"></p>
+<h4 id="删除变量"><a href="#删除变量" class="headerlink" title="删除变量"></a>删除变量</h4><p><strong>unset</strong>                                                            <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002226920.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129002309485.png"></p>
+<p>注意：变量被删除后不能再次使用，unset命令不能删除只读变量。</p>
+<h3 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h3><ul>
+<li><strong>局部变量</strong>:在脚本或命令中定义，尽在当前shell实例中有效，其他shell启动的程序不能访问局部变量。</li>
+<li><strong>环境变量</strong>：所有的程序，包括shell启动的程序，都能访问环境变量，有些程序需要环境变量来保证其正常运行。必要的时候shell脚本也可以定义环境变量。</li>
+<li><strong>shell变量</strong>: shell变量是由shell程序设置的特殊变量。shell变量中有一部分是环境变量，有一部分是局部变量，这些变量保证了shell的正常运行。</li>
+</ul>
+<h3 id="Shell字符串"><a href="#Shell字符串" class="headerlink" title="Shell字符串"></a>Shell字符串</h3><ul>
+<li><strong>单引号</strong><ul>
+<li>单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的</li>
+<li>不能出现单独一个的单引号（对单引号使用转义符后也不行），但可以成对出现，作为字符串拼接使用</li>
+</ul>
+</li>
+<li><strong>双引号</strong><ul>
+<li>双引号里可以由变量</li>
+<li>双引号里可以出现转义字符</li>
+</ul>
+</li>
+</ul>
+<h4 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token assign-left variable">luffy</span><span class="token operator">=</span><span class="token string">"luffyblog.top"</span>
 <span class="token comment"># 使用双引号拼接</span>
 <span class="token assign-left variable">luffy1</span><span class="token operator">=</span><span class="token string">"hello, "</span><span class="token variable">$luffy</span><span class="token string">" !"</span>
@@ -9,21 +638,52 @@
 <span class="token assign-left variable">luffy3</span><span class="token operator">=</span><span class="token string">'hello, '</span><span class="token variable">$luffy</span><span class="token string">' !'</span>
 <span class="token assign-left variable">luffy4</span><span class="token operator">=</span><span class="token string">'hello, ${luffy} !'</span>
 <span class="token builtin class-name">echo</span> <span class="token variable">$luffy3</span> <span class="token variable">$luffy4</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129003515554.png" alt="image-20211129003515554"></p><h4 id="获取字符串长度"><a href="#获取字符串长度" class="headerlink" title="获取字符串长度"></a>获取字符串长度</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211129003515554.png" alt="image-20211129003515554"></p>
+<h4 id="获取字符串长度"><a href="#获取字符串长度" class="headerlink" title="获取字符串长度"></a>获取字符串长度</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token assign-left variable">luffy</span><span class="token operator">=</span><span class="token string">"luffyblog.top"</span>
-<span class="token builtin class-name">echo</span> <span class="token variable">${<span class="token operator">#</span>luffy}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>输出结果： <code>13</code></p><h4 id="提取子字符串"><a href="#提取子字符串" class="headerlink" title="提取子字符串"></a>提取子字符串</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${<span class="token operator">#</span>luffy}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>输出结果： <code>13</code></p>
+<h4 id="提取子字符串"><a href="#提取子字符串" class="headerlink" title="提取子字符串"></a>提取子字符串</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token assign-left variable">luffy</span><span class="token operator">=</span><span class="token string">"luffyblog.top"</span>
-<span class="token builtin class-name">echo</span> <span class="token variable">${luffy<span class="token operator">:</span>1<span class="token operator">:</span>5}</span>	<span class="token comment">#意为从第 2 个字符开始截取 5 个字符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>输出结果：<code>uffyb</code></p><h4 id="匹配字符先出现的位置"><a href="#匹配字符先出现的位置" class="headerlink" title="匹配字符先出现的位置"></a><del>匹配字符先出现的位置</del></h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">${luffy<span class="token operator">:</span>1<span class="token operator">:</span>5}</span>	<span class="token comment">#意为从第 2 个字符开始截取 5 个字符</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>输出结果：<code>uffyb</code></p>
+<h4 id="匹配字符先出现的位置"><a href="#匹配字符先出现的位置" class="headerlink" title="匹配字符先出现的位置"></a><del>匹配字符先出现的位置</del></h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token assign-left variable">luffy</span><span class="token operator">=</span><span class="token string">"luffyblog.blog.top.ffyhaha"</span>
 <span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">`</span><span class="token function">expr</span> index <span class="token string">"<span class="token variable">$luffy</span>"</span> fy<span class="token variable">`</span></span> 	<span class="token comment"># num1</span>
 <span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">`</span><span class="token function">expr</span> index <span class="token string">"<span class="token variable">$luffy</span>"</span> blog<span class="token variable">`</span></span> <span class="token comment"># num2</span>
 <span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">`</span><span class="token function">expr</span> index <span class="token string">"<span class="token variable">$luffy</span>"</span> ha<span class="token variable">`</span></span>	<span class="token comment"># num3</span>
-<span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">`</span><span class="token function">expr</span> index <span class="token string">"<span class="token variable">$luffy</span>"</span> og<span class="token variable">`</span></span>	<span class="token comment"># num4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>输出结果：<code>3(num1),1(num2),23(num3),8(num4)</code></p><p><code>注意</code>：理解错了，匹配的是字符里先出现的字母的位置（从<strong>1</strong>开始算起）🌿🌿🌿</p><h3 id="Shell数组"><a href="#Shell数组" class="headerlink" title="Shell数组"></a>Shell数组</h3><p>bash只支持一维数组（不支持多维数组），初始化不需要定义数组大小</p><p>类似于 C 语言，数组元素的下标由 0 开始编号。</p><h4 id="定义数组"><a href="#定义数组" class="headerlink" title="定义数组"></a>定义数组</h4><blockquote><p>数组名=(值1 值2 … 值n)</p></blockquote><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">array_luffy</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>下标访问：<code>array_luffy[1]</code>, <code>array_luffy[3]</code></p><h4 id="读取数组"><a href="#读取数组" class="headerlink" title="读取数组"></a>读取数组</h4><ul><li><p>读取某个元素：<code>${array_luffy[0]}</code></p></li><li><p>读取所有元素：<code>${array_luffy[@]}</code> 或者 <code>${array_luffy[*]}</code></p></li></ul><h4 id="获取数组的长度"><a href="#获取数组的长度" class="headerlink" title="获取数组的长度"></a>获取数组的长度</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 取得数组元素的个数</span>
+<span class="token builtin class-name">echo</span> <span class="token variable"><span class="token variable">`</span><span class="token function">expr</span> index <span class="token string">"<span class="token variable">$luffy</span>"</span> og<span class="token variable">`</span></span>	<span class="token comment"># num4</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>输出结果：<code>3(num1),1(num2),23(num3),8(num4)</code></p>
+<p><code>注意</code>：理解错了，匹配的是字符里先出现的字母的位置（从<strong>1</strong>开始算起）🌿🌿🌿</p>
+<h3 id="Shell数组"><a href="#Shell数组" class="headerlink" title="Shell数组"></a>Shell数组</h3><p>bash只支持一维数组（不支持多维数组），初始化不需要定义数组大小</p>
+<p>类似于 C 语言，数组元素的下标由 0 开始编号。</p>
+<h4 id="定义数组"><a href="#定义数组" class="headerlink" title="定义数组"></a>定义数组</h4><blockquote>
+<p>数组名=(值1 值2 … 值n)</p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">array_luffy</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>下标访问：<code>array_luffy[1]</code>, <code>array_luffy[3]</code></p>
+<h4 id="读取数组"><a href="#读取数组" class="headerlink" title="读取数组"></a>读取数组</h4><ul>
+<li><p>读取某个元素：<code>${array_luffy[0]}</code></p>
+</li>
+<li><p>读取所有元素：<code>${array_luffy[@]}</code> 或者 <code>${array_luffy[*]}</code></p>
+</li>
+</ul>
+<h4 id="获取数组的长度"><a href="#获取数组的长度" class="headerlink" title="获取数组的长度"></a>获取数组的长度</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 取得数组元素的个数</span>
 <span class="token assign-left variable">length</span><span class="token operator">=</span><span class="token variable">${<span class="token operator">#</span>array_name<span class="token punctuation">[</span>@<span class="token punctuation">]</span>}</span>
 <span class="token comment"># 或者</span>
 <span class="token assign-left variable">length</span><span class="token operator">=</span><span class="token variable">${<span class="token operator">#</span>array_name<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>
 <span class="token comment"># 取得数组单个元素的长度</span>
-<span class="token assign-left variable">lengthn</span><span class="token operator">=</span><span class="token variable">${<span class="token operator">#</span>array_name<span class="token punctuation">[</span>n<span class="token punctuation">]</span>}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Shell注释"><a href="#Shell注释" class="headerlink" title="Shell注释"></a>Shell注释</h3><p>以<code>#</code>开头的行就是注释，会被解释器忽略。</p><h4 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h4><p>不知道下面的方法好不好使，还没试过。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">:<span class="token operator">&lt;&lt;</span><span class="token string">EOF
+<span class="token assign-left variable">lengthn</span><span class="token operator">=</span><span class="token variable">${<span class="token operator">#</span>array_name<span class="token punctuation">[</span>n<span class="token punctuation">]</span>}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="Shell注释"><a href="#Shell注释" class="headerlink" title="Shell注释"></a>Shell注释</h3><p>以<code>#</code>开头的行就是注释，会被解释器忽略。</p>
+<h4 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h4><p>不知道下面的方法好不好使，还没试过。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">:<span class="token operator">&lt;&lt;</span><span class="token string">EOF
 blabla1
 blabla2
 blabla3
@@ -39,12 +699,62 @@ blabla6
 blabla7
 blabla8
 blabla9
-<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Shell传递参数"><a href="#Shell传递参数" class="headerlink" title="Shell传递参数"></a>Shell传递参数</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token operator">!</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="Shell传递参数"><a href="#Shell传递参数" class="headerlink" title="Shell传递参数"></a>Shell传递参数</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"shell 传递参数实例"</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"执行的文件名：<span class="token variable">$0</span>"</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"第一个参数为：<span class="token variable">$1</span>"</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"第二个参数为：<span class="token variable">$2</span>"</span>
-<span class="token builtin class-name">echo</span> <span class="token string">"第三个参数为：<span class="token variable">$3</span>"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><code>./hello.sh 1 2 3</code></p><p>运行结果：</p><p><code>shell 传递参数实例</code><br><code>执行的文件名：./hello.sh</code><br><code>第一个参数为：1</code><br><code>第二个参数为：2</code><br><code>第三个参数为：3</code></p><table><thead><tr><th>参数处理</th><th>说明</th></tr></thead><tbody><tr><td>$#</td><td>传递到脚本的参数个数</td></tr><tr><td>$*</td><td>以一个单字符串显示所有向脚本传递的参数</td></tr><tr><td>$$</td><td>脚本运行的当前进程ID号</td></tr><tr><td>$!</td><td>后台运行的最后一个进程的ID号</td></tr><tr><td>$@</td><td>与$*相同，但是使用时加引号，并在引号中返回每个参数</td></tr><tr><td>$-</td><td>显示Shell使用的当前选项，与<strong>set命令</strong>功能相同</td></tr><tr><td>$?</td><td>显示最后命令的退出状态，0表示没有错误</td></tr></tbody></table><p>🐖🐖：$* 与 $@</p><ul><li>相同：都是引用所有参数</li><li>不同：只有在双引号中体现出来。假设在脚本运行时写了3个参数1，2，3.则 “*”等价于”1 2 3”(传递了一个参数)，而”@”等价于”1” “2” “3”(传递了三个参数)</li></ul><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"第三个参数为：<span class="token variable">$3</span>"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>./hello.sh 1 2 3</code></p>
+<p>运行结果：</p>
+<p><code>shell 传递参数实例</code><br><code>执行的文件名：./hello.sh</code><br><code>第一个参数为：1</code><br><code>第二个参数为：2</code><br><code>第三个参数为：3</code></p>
+<table>
+<thead>
+<tr>
+<th>参数处理</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$#</td>
+<td>传递到脚本的参数个数</td>
+</tr>
+<tr>
+<td>$*</td>
+<td>以一个单字符串显示所有向脚本传递的参数</td>
+</tr>
+<tr>
+<td>$$</td>
+<td>脚本运行的当前进程ID号</td>
+</tr>
+<tr>
+<td>$!</td>
+<td>后台运行的最后一个进程的ID号</td>
+</tr>
+<tr>
+<td>$@</td>
+<td>与$*相同，但是使用时加引号，并在引号中返回每个参数</td>
+</tr>
+<tr>
+<td>$-</td>
+<td>显示Shell使用的当前选项，与<strong>set命令</strong>功能相同</td>
+</tr>
+<tr>
+<td>$?</td>
+<td>显示最后命令的退出状态，0表示没有错误</td>
+</tr>
+</tbody></table>
+<p>🐖🐖：$* 与 $@</p>
+<ul>
+<li>相同：都是引用所有参数</li>
+<li>不同：只有在双引号中体现出来。假设在脚本运行时写了3个参数1，2，3.则 “*”等价于”1 2 3”(传递了一个参数)，而”@”等价于”1” “2” “3”(传递了三个参数)</li>
+</ul>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"shell 传递参数实例"</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"执行的文件名：<span class="token variable">$0</span>"</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"第一个参数为：<span class="token variable">$1</span>"</span>
@@ -56,7 +766,13 @@ blabla9
 <span class="token builtin class-name">echo</span> <span class="token variable">$!</span>
 <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$@</span>"</span>
 <span class="token builtin class-name">echo</span> $-
-<span class="token builtin class-name">echo</span> <span class="token variable">$?</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>输出结果</p><p><code>shell 传递参数实例</code><br><code>执行的文件名：./hello.sh</code><br><code>第一个参数为：1</code><br><code>第二个参数为：2</code><br><code>第三个参数为：3</code><br><code>传递到脚本的参数个数：3</code><br><code>1 2 3</code><br><code>2209</code></p><p><code>1 2 3</code><br><code>hB</code><br><code>0</code></p><p><strong>示例</strong></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">"-- \<span class="token variable">$*</span> 演示 ---"</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$?</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>输出结果</p>
+<p><code>shell 传递参数实例</code><br><code>执行的文件名：./hello.sh</code><br><code>第一个参数为：1</code><br><code>第二个参数为：2</code><br><code>第三个参数为：3</code><br><code>传递到脚本的参数个数：3</code><br><code>1 2 3</code><br><code>2209</code></p>
+<p><code>1 2 3</code><br><code>hB</code><br><code>0</code></p>
+<p><strong>示例</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">"-- \<span class="token variable">$*</span> 演示 ---"</span>
 <span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token string">"<span class="token variable">$*</span>"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
     <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
 <span class="token keyword">done</span>
@@ -64,13 +780,23 @@ blabla9
 <span class="token builtin class-name">echo</span> <span class="token string">"-- \<span class="token variable">$@</span> 演示 ---"</span>
 <span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token string">"<span class="token variable">$@</span>"</span><span class="token punctuation">;</span> <span class="token keyword">do</span>
     <span class="token builtin class-name">echo</span> <span class="token variable">$i</span>
-<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>输出结果：</strong></p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./test.sh <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
+<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>输出结果：</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">./test.sh <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
 -- <span class="token variable">$*</span> 演示 ---
 <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
 -- <span class="token variable">$@</span> 演示 ---
 <span class="token number">1</span>
 <span class="token number">2</span>
-<span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="Shell运算符"><a href="#Shell运算符" class="headerlink" title="Shell运算符"></a>Shell运算符</h3><p>原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 awk 和 expr，expr 最常用。</p><h4 id="expr"><a href="#expr" class="headerlink" title="expr"></a>expr</h4><p>expr是一款表达式计算工具，使用它能完成表达式的求值操作。</p><p>实例：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token number">3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="Shell运算符"><a href="#Shell运算符" class="headerlink" title="Shell运算符"></a>Shell运算符</h3><p>原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 awk 和 expr，expr 最常用。</p>
+<h4 id="expr"><a href="#expr" class="headerlink" title="expr"></a>expr</h4><p>expr是一款表达式计算工具，使用它能完成表达式的求值操作。</p>
+<p>实例：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">32</span>
 <span class="token assign-left variable">b</span><span class="token operator">=</span><span class="token number">128</span>
 
@@ -98,21 +824,235 @@ blabla9
 <span class="token keyword">then</span>
         <span class="token builtin class-name">echo</span> <span class="token string">"a 不等于 b"</span>
 <span class="token keyword">fi</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>输出结果：</p><p><code>a + b = 160</code><br><code>a - b = -96</code><br><code>a * b = 4096</code><br><code>b / a = 4</code><br><code>b % a = 0</code><br><code>a 不等于 b</code></p><h5 id="⭐条件表达式要放在方括号之间，且一定要空格，-a-b-✔️-a-b-❌，-a-b-❌"><a href="#⭐条件表达式要放在方括号之间，且一定要空格，-a-b-✔️-a-b-❌，-a-b-❌" class="headerlink" title="⭐条件表达式要放在方括号之间，且一定要空格，[ $a == $b ]✔️, [$a == $b]❌，[ $a==$b ]❌"></a>⭐条件表达式要放在方括号之间，且一定要空格，[ $a == $b ]✔️, [$a == $b]❌，[ $a==$b ]❌</h5><ul><li>乘号<code>*</code>前边必须加反斜杠<code>\</code></li></ul><h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><p>只支持数字，不支持字符串，除非字符串的值是数字</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>输出结果：</p>
+<p><code>a + b = 160</code><br><code>a - b = -96</code><br><code>a * b = 4096</code><br><code>b / a = 4</code><br><code>b % a = 0</code><br><code>a 不等于 b</code></p>
+<h5 id="⭐条件表达式要放在方括号之间，且一定要空格，-a-b-✔️-a-b-❌，-a-b-❌"><a href="#⭐条件表达式要放在方括号之间，且一定要空格，-a-b-✔️-a-b-❌，-a-b-❌" class="headerlink" title="⭐条件表达式要放在方括号之间，且一定要空格，[ $a == $b ]✔️, [$a == $b]❌，[ $a==$b ]❌"></a>⭐条件表达式要放在方括号之间，且一定要空格，[ $a == $b ]✔️, [$a == $b]❌，[ $a==$b ]❌</h5><ul>
+<li>乘号<code>*</code>前边必须加反斜杠<code>\</code></li>
+</ul>
+<h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><p>只支持数字，不支持字符串，除非字符串的值是数字</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token shebang important">#!/bin/bash</span>
 <span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">10</span>
-<span class="token assign-left variable">b</span><span class="token operator">=</span><span class="token number">20</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><table><thead><tr><th align="left">运算符</th><th align="left">说明</th><th align="left">举例</th></tr></thead><tbody><tr><td align="left">-eq</td><td align="left">检测两个数是否<strong>相等</strong>，相等返回 true。</td><td align="left">[ $a -eq $b ] 返回 false。</td></tr><tr><td align="left">-ne</td><td align="left">检测两个数是否<strong>不相等</strong>，不相等返回 true。</td><td align="left">[ $a -ne $b ] 返回 true。</td></tr><tr><td align="left">-gt</td><td align="left">检测左边的数是否<strong>大于</strong>右边的，如果是，则返回 true。</td><td align="left">[ $a -gt $b ] 返回 false。</td></tr><tr><td align="left">-lt</td><td align="left">检测左边的数是否<strong>小于</strong>右边的，如果是，则返回 true。</td><td align="left">[ $a -lt $b ] 返回 true。</td></tr><tr><td align="left">-ge</td><td align="left">检测左边的数是否<strong>大于等于</strong>右边的，如果是，则返回 true。</td><td align="left">[ $a -ge $b ] 返回 false。</td></tr><tr><td align="left">-le</td><td align="left">检测左边的数是否<strong>小于等于</strong>右边的，如果是，则返回 true。</td><td align="left">[ $a -le $b ] 返回 true。</td></tr></tbody></table><h4 id="布尔运算符"><a href="#布尔运算符" class="headerlink" title="布尔运算符"></a>布尔运算符</h4><table><thead><tr><th align="left">运算符</th><th align="left">说明</th><th align="left">举例</th></tr></thead><tbody><tr><td align="left">!</td><td align="left">非运算，表达式为 true 则返回 false，否则返回 true。</td><td align="left">[ ! false ] 返回 true。</td></tr><tr><td align="left">-o</td><td align="left">或运算，有一个表达式为 true 则返回 true。</td><td align="left">[ $a -lt 20 -o $b -gt 100 ] 返回 true。</td></tr><tr><td align="left">-a</td><td align="left">与运算，两个表达式都为 true 才返回 true。</td><td align="left">[ $a -lt 20 -a $b -gt 100 ] 返回 false。</td></tr></tbody></table><h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><table><thead><tr><th align="left">运算符</th><th align="left">说明</th><th align="left">举例</th></tr></thead><tbody><tr><td align="left">&amp;&amp;</td><td align="left">逻辑的 AND</td><td align="left">[[ $a -lt 100 &amp;&amp; $b -gt 100 ]] 返回 false</td></tr><tr><td align="left">||</td><td align="left">逻辑的 OR</td><td align="left">[[ $a -lt 100 || $b -gt 100 ]] 返回 true</td></tr></tbody></table><h4 id="字符串运算符"><a href="#字符串运算符" class="headerlink" title="字符串运算符"></a>字符串运算符</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#！/bin/bash</span>
+<span class="token assign-left variable">b</span><span class="token operator">=</span><span class="token number">20</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">说明</th>
+<th align="left">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-eq</td>
+<td align="left">检测两个数是否<strong>相等</strong>，相等返回 true。</td>
+<td align="left">[ $a -eq $b ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-ne</td>
+<td align="left">检测两个数是否<strong>不相等</strong>，不相等返回 true。</td>
+<td align="left">[ $a -ne $b ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-gt</td>
+<td align="left">检测左边的数是否<strong>大于</strong>右边的，如果是，则返回 true。</td>
+<td align="left">[ $a -gt $b ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-lt</td>
+<td align="left">检测左边的数是否<strong>小于</strong>右边的，如果是，则返回 true。</td>
+<td align="left">[ $a -lt $b ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-ge</td>
+<td align="left">检测左边的数是否<strong>大于等于</strong>右边的，如果是，则返回 true。</td>
+<td align="left">[ $a -ge $b ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-le</td>
+<td align="left">检测左边的数是否<strong>小于等于</strong>右边的，如果是，则返回 true。</td>
+<td align="left">[ $a -le $b ] 返回 true。</td>
+</tr>
+</tbody></table>
+<h4 id="布尔运算符"><a href="#布尔运算符" class="headerlink" title="布尔运算符"></a>布尔运算符</h4><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">说明</th>
+<th align="left">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">!</td>
+<td align="left">非运算，表达式为 true 则返回 false，否则返回 true。</td>
+<td align="left">[ ! false ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-o</td>
+<td align="left">或运算，有一个表达式为 true 则返回 true。</td>
+<td align="left">[ $a -lt 20 -o $b -gt 100 ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-a</td>
+<td align="left">与运算，两个表达式都为 true 才返回 true。</td>
+<td align="left">[ $a -lt 20 -a $b -gt 100 ] 返回 false。</td>
+</tr>
+</tbody></table>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">说明</th>
+<th align="left">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">&amp;&amp;</td>
+<td align="left">逻辑的 AND</td>
+<td align="left">[[ $a -lt 100 &amp;&amp; $b -gt 100 ]] 返回 false</td>
+</tr>
+<tr>
+<td align="left">||</td>
+<td align="left">逻辑的 OR</td>
+<td align="left">[[ $a -lt 100 || $b -gt 100 ]] 返回 true</td>
+</tr>
+</tbody></table>
+<h4 id="字符串运算符"><a href="#字符串运算符" class="headerlink" title="字符串运算符"></a>字符串运算符</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment">#！/bin/bash</span>
 <span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token string">"abc"</span>
-<span class="token assign-left variable">b</span><span class="token operator">=</span><span class="token string">"efg"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>​</p><table><thead><tr><th align="left">运算符</th><th align="left">说明</th><th align="left">举例</th></tr></thead><tbody><tr><td align="left">=</td><td align="left">检测两个字符串是否相等，相等返回 true。</td><td align="left">[ $a = $b ] 返回 false。</td></tr><tr><td align="left">!=</td><td align="left">检测两个字符串是否不相等，不相等返回 true。</td><td align="left">[ $a != $b ] 返回 true。</td></tr><tr><td align="left">-z</td><td align="left">检测字符串长度是否为0，为0返回 true。</td><td align="left">[ -z $a ] 返回 false。</td></tr><tr><td align="left">-n</td><td align="left">检测字符串长度是否不为 0，不为 0 返回 true。</td><td align="left">[ -n “$a” ] 返回 true。</td></tr><tr><td align="left">$</td><td align="left">检测字符串是否为空，不为空返回 true。</td><td align="left">[ $a ] 返回 true。</td></tr></tbody></table><h4 id="文件测试运算符"><a href="#文件测试运算符" class="headerlink" title="文件测试运算符"></a>文件测试运算符</h4><table><thead><tr><th align="left">操作符</th><th align="left">说明</th><th align="left">举例</th></tr></thead><tbody><tr><td align="left">-b file</td><td align="left">检测文件是否是块设备文件，如果是，则返回 true。</td><td align="left">[ -b $file ] 返回 false。</td></tr><tr><td align="left">-c file</td><td align="left">检测文件是否是字符设备文件，如果是，则返回 true。</td><td align="left">[ -c $file ] 返回 false。</td></tr><tr><td align="left">-d file</td><td align="left">检测文件是否是目录，如果是，则返回 true。</td><td align="left">[ -d $file ] 返回 false。</td></tr><tr><td align="left">-f file</td><td align="left">检测文件是否是普通文件（既不是目录，也不是设备文件），如果是，则返回 true。</td><td align="left">[ -f $file ] 返回 true。</td></tr><tr><td align="left">-g file</td><td align="left">检测文件是否设置了 SGID 位，如果是，则返回 true。</td><td align="left">[ -g $file ] 返回 false。</td></tr><tr><td align="left">-k file</td><td align="left">检测文件是否设置了粘着位(Sticky Bit)，如果是，则返回 true。</td><td align="left">[ -k $file ] 返回 false。</td></tr><tr><td align="left">-p file</td><td align="left">检测文件是否是有名管道，如果是，则返回 true。</td><td align="left">[ -p $file ] 返回 false。</td></tr><tr><td align="left">-u file</td><td align="left">检测文件是否设置了 SUID 位，如果是，则返回 true。</td><td align="left">[ -u $file ] 返回 false。</td></tr><tr><td align="left">-r file</td><td align="left">检测文件是否可读，如果是，则返回 true。</td><td align="left">[ -r $file ] 返回 true。</td></tr><tr><td align="left">-w file</td><td align="left">检测文件是否可写，如果是，则返回 true。</td><td align="left">[ -w $file ] 返回 true。</td></tr><tr><td align="left">-x file</td><td align="left">检测文件是否可执行，如果是，则返回 true。</td><td align="left">[ -x $file ] 返回 true。</td></tr><tr><td align="left">-s file</td><td align="left">检测文件是否为空（文件大小是否大于0），不为空返回 true。</td><td align="left">[ -s $file ] 返回 true。</td></tr><tr><td align="left">-e file</td><td align="left">检测文件（包括目录）是否存在，如果是，则返回 true。</td><td align="left">[ -e $file ] 返回 true。</td></tr></tbody></table><p>其他检查符：</p><ul><li><strong>-S</strong>: 判断某文件是否 socket。</li><li><strong>-L</strong>: 检测文件是否存在并且是一个符号链接。</li></ul><h3 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h3><h4 id="if"><a href="#if" class="headerlink" title="if"></a>if</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">if</span> condition
+<span class="token assign-left variable">b</span><span class="token operator">=</span><span class="token string">"efg"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>​    </p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">说明</th>
+<th align="left">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">=</td>
+<td align="left">检测两个字符串是否相等，相等返回 true。</td>
+<td align="left">[ $a = $b ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">!=</td>
+<td align="left">检测两个字符串是否不相等，不相等返回 true。</td>
+<td align="left">[ $a != $b ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-z</td>
+<td align="left">检测字符串长度是否为0，为0返回 true。</td>
+<td align="left">[ -z $a ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-n</td>
+<td align="left">检测字符串长度是否不为 0，不为 0 返回 true。</td>
+<td align="left">[ -n “$a” ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">$</td>
+<td align="left">检测字符串是否为空，不为空返回 true。</td>
+<td align="left">[ $a ] 返回 true。</td>
+</tr>
+</tbody></table>
+<h4 id="文件测试运算符"><a href="#文件测试运算符" class="headerlink" title="文件测试运算符"></a>文件测试运算符</h4><table>
+<thead>
+<tr>
+<th align="left">操作符</th>
+<th align="left">说明</th>
+<th align="left">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-b file</td>
+<td align="left">检测文件是否是块设备文件，如果是，则返回 true。</td>
+<td align="left">[ -b $file ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-c file</td>
+<td align="left">检测文件是否是字符设备文件，如果是，则返回 true。</td>
+<td align="left">[ -c $file ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-d file</td>
+<td align="left">检测文件是否是目录，如果是，则返回 true。</td>
+<td align="left">[ -d $file ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-f file</td>
+<td align="left">检测文件是否是普通文件（既不是目录，也不是设备文件），如果是，则返回 true。</td>
+<td align="left">[ -f $file ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-g file</td>
+<td align="left">检测文件是否设置了 SGID 位，如果是，则返回 true。</td>
+<td align="left">[ -g $file ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-k file</td>
+<td align="left">检测文件是否设置了粘着位(Sticky Bit)，如果是，则返回 true。</td>
+<td align="left">[ -k $file ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-p file</td>
+<td align="left">检测文件是否是有名管道，如果是，则返回 true。</td>
+<td align="left">[ -p $file ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-u file</td>
+<td align="left">检测文件是否设置了 SUID 位，如果是，则返回 true。</td>
+<td align="left">[ -u $file ] 返回 false。</td>
+</tr>
+<tr>
+<td align="left">-r file</td>
+<td align="left">检测文件是否可读，如果是，则返回 true。</td>
+<td align="left">[ -r $file ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-w file</td>
+<td align="left">检测文件是否可写，如果是，则返回 true。</td>
+<td align="left">[ -w $file ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-x file</td>
+<td align="left">检测文件是否可执行，如果是，则返回 true。</td>
+<td align="left">[ -x $file ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-s file</td>
+<td align="left">检测文件是否为空（文件大小是否大于0），不为空返回 true。</td>
+<td align="left">[ -s $file ] 返回 true。</td>
+</tr>
+<tr>
+<td align="left">-e file</td>
+<td align="left">检测文件（包括目录）是否存在，如果是，则返回 true。</td>
+<td align="left">[ -e $file ] 返回 true。</td>
+</tr>
+</tbody></table>
+<p>其他检查符：</p>
+<ul>
+<li><strong>-S</strong>: 判断某文件是否 socket。</li>
+<li><strong>-L</strong>: 检测文件是否存在并且是一个符号链接。</li>
+</ul>
+<h3 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h3><h4 id="if"><a href="#if" class="headerlink" title="if"></a>if</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">if</span> condition
 <span class="token keyword">then</span>
   <span class="token punctuation">..</span>.
   <span class="token punctuation">..</span>.
-<span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="if-else-1"><a href="#if-else-1" class="headerlink" title="if else"></a>if else</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">if</span> condition
+<span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="if-else-1"><a href="#if-else-1" class="headerlink" title="if else"></a>if else</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">if</span> condition
 <span class="token keyword">then</span>
   <span class="token punctuation">..</span>.
   <span class="token punctuation">..</span>.
 <span class="token keyword">else</span>
   <span class="token punctuation">..</span>.
-<span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="if-else-if-else"><a href="#if-else-if-else" class="headerlink" title="if else-if else"></a>if else-if else</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">if</span> condition1
+<span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="if-else-if-else"><a href="#if-else-if-else" class="headerlink" title="if else-if else"></a>if else-if else</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">if</span> condition1
 <span class="token keyword">then</span>
   <span class="token punctuation">..</span>.
 <span class="token keyword">elif</span> condition2
@@ -120,20 +1060,904 @@ blabla9
   <span class="token punctuation">..</span>.
 <span class="token keyword">else</span>
   <span class="token punctuation">..</span>.
-<span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">var</span> <span class="token keyword">in</span> item1 item2 <span class="token punctuation">..</span>. itemN
+<span class="token keyword">fi</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token keyword">for</span> <span class="token for-or-select variable">var</span> <span class="token keyword">in</span> item1 item2 <span class="token punctuation">..</span>. itemN
 <span class="token keyword">do</span>
   command1
   command2
   <span class="token punctuation">..</span>.
   commandN
-<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">10</span>
+<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">10</span>
 <span class="token keyword">while</span><span class="token variable"><span class="token punctuation">((</span> $a<span class="token operator">&gt;=</span><span class="token number">0</span> <span class="token punctuation">))</span></span>
 <span class="token keyword">do</span>
   <span class="token builtin class-name">echo</span> <span class="token variable">$a</span>
   <span class="token builtin class-name">let</span> <span class="token string">"a--"</span>
-<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="until循环"><a href="#until循环" class="headerlink" title="until循环"></a>until循环</h4><p>until循环与while恰恰相反，直到条件为true时停止。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">0</span>
+<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="until循环"><a href="#until循环" class="headerlink" title="until循环"></a>until循环</h4><p>until循环与while恰恰相反，直到条件为true时停止。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token number">0</span>
 <span class="token keyword">until</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token variable">$a</span> -lt <span class="token number">4</span> <span class="token punctuation">]</span>
 <span class="token keyword">do</span>
   <span class="token builtin class-name">echo</span> <span class="token variable">$a</span>
   <span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">expr</span> $a + <span class="token number">1</span><span class="token variable">`</span></span>
-<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>运行结果：</p><p><code>0</code></p><p><code>1</code></p><p><code>2</code></p><p><code>3</code></p><h3 id="输入输出重定向"><a href="#输入输出重定向" class="headerlink" title="输入输出重定向"></a>输入输出重定向</h3><table><thead><tr><th align="left">命令</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left">command &gt; file</td><td align="left">将输出重定向到 file。</td></tr><tr><td align="left">command &lt; file</td><td align="left">将输入重定向到 file。</td></tr><tr><td align="left">command &gt;&gt; file</td><td align="left">将输出以追加的方式重定向到 file。</td></tr><tr><td align="left">n &gt; file</td><td align="left">将文件描述符为 n 的文件重定向到 file。</td></tr><tr><td align="left">n &gt;&gt; file</td><td align="left">将文件描述符为 n 的文件以追加的方式重定向到 file。</td></tr><tr><td align="left">n &gt;&amp; m</td><td align="left">将输出文件 m 和 n 合并。</td></tr><tr><td align="left">n &lt;&amp; m</td><td align="left">将输入文件 m 和 n 合并。</td></tr><tr><td align="left">&lt;&lt; tag</td><td align="left">将开始标记 tag 和结束标记 tag 之间的内容作为输入。</td></tr></tbody></table></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者: </i></span><span class="reprint-info"><a href="/about" rel="external nofollow noreferrer">路飞</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接: </i></span><span class="reprint-info"><a href="https://luffyblog.top/posts/13507.html">https://luffyblog.top/posts/13507.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明: </i></span><span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/about" target="_blank">路飞</a> !</span></div></div><script async defer>function navToReprintStatement(){$("html, body").animate({scrollTop:$("#reprint-statement").offset().top-80},800)}document.addEventListener("copy",(function(t){M.toast({html:'<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>'})}))</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/Shell/"><span class="chip bg-color">Shell</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="facebook,google,qq,wechat,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div><style>#reward{margin:40px 0;text-align:center}#reward .reward-link{font-size:1.4rem;line-height:38px}#reward .btn-floating:hover{box-shadow:0 6px 12px rgba(0,0,0,.2),0 5px 15px rgba(0,0,0,.2)}#rewardModal{width:320px;height:350px}#rewardModal .reward-title{margin:15px auto;padding-bottom:5px}#rewardModal .modal-content{padding:10px}#rewardModal .close{position:absolute;right:15px;top:15px;color:rgba(0,0,0,.5);font-size:1.3rem;line-height:20px;cursor:pointer}#rewardModal .close:hover{color:#ef5350;transform:scale(1.3);-moz-transform:scale(1.3);-webkit-transform:scale(1.3);-o-transform:scale(1.3)}#rewardModal .reward-tabs{margin:0 auto;width:210px}.reward-tabs .tabs{height:38px;margin:10px auto;padding-left:0}.reward-content ul{padding-left:0!important}.reward-tabs .tabs .tab{height:38px;line-height:38px}.reward-tabs .tab a{color:#fff;background-color:#ccc}.reward-tabs .tab a:hover{background-color:#ccc;color:#fff}.reward-tabs .wechat-tab .active{color:#fff!important;background-color:#22ab38!important}.reward-tabs .alipay-tab .active{color:#fff!important;background-color:#019fe8!important}.reward-tabs .reward-img{width:210px;height:210px}</style><div id="reward"><a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a><div id="rewardModal" class="modal"><div class="modal-content"><a class="close modal-close"><i class="fas fa-times"></i></a><h4 class="reward-title">您的赏识是俺前进的动力</h4><div class="reward-content"><div class="reward-tabs"><ul class="tabs row"><li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li><li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li></ul><div id="alipay"><img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码"></div><div id="wechat"><img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码"></div></div></div></div></div></div><script>$((function(){$(".tabs").tabs()}))</script></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="far fa-dot-circle"></i>&nbsp;本篇</div><div class="card"><a href="/posts/13507.html"><div class="card-image"><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/beauty297.png" class="responsive-img" alt="linux04"> <span class="card-title">linux04</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2021-11-29 </span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Linux/" class="post-category">Linux</a></span></div></div><div class="card-action article-tags"><a href="/tags/Shell/"><span class="chip bg-color">Shell</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/4013.html"><div class="card-image"><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/craw38.png" class="responsive-img" alt="python爬虫日记"> <span class="card-title">python爬虫日记</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2021-11-24 </span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/python/" class="post-category">python</a></span></div></div><div class="card-action article-tags"><a href="/tags/%E7%9E%8E%E7%8E%A9/"><span class="chip bg-color">瞎玩</span></a></div></div></div></div></article><script src="//cdn.jsdelivr.net/npm/@waline/client"></script><div id="waline"></div><script>new Waline({el:"#waline",serverURL:"https://blog-api-dusky-nine.vercel.app/",emoji:["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq"],avatar:"monsterid",visitor:!0})</script></div><script>$("#articleContent").on("copy",(function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("100"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: 路飞的小破站<br />文章作者: 路飞<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归作者所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout((function(){t.removeChild(o)}),200)}}}))</script><script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script><script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script><script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script><script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$((function(){tocbot.init({tocSelector:"#toc-content",contentSelector:"#articleContent",headingsOffset:-(.4*$(window).height()-45),collapseDepth:Number("0"),headingSelector:"h2, h3, h4"});let t=0;$("#toc-content a").each((function(){$(this).attr("href","#toc-heading-"+ ++t)})),t=0,$("#articleContent").children("h2, h3, h4").each((function(){$(this).attr("id","toc-heading-"+ ++t)}));let e=parseInt(.4*$(window).height()-64),n=$(".toc-widget");$(window).scroll((function(){$(window).scrollTop()>e?n.addClass("toc-fixed"):n.removeClass("toc-fixed")}));let o=$("#toc-aside"),i=$("#main-content");$("#floating-toc-btn .btn-floating").click((function(){o.hasClass("expanded")?(o.removeClass("expanded").hide(),i.removeClass("l9")):(o.addClass("expanded").show(),i.addClass("l9")),function(t,e){let n=$("#"+t);if(0===n.length)return;let o=n.width();o+=o>=450?21:o>=350&&o<450?18:o>=300&&o<350?16:14,$("#"+e).width(o)}("artDetail","prenext-posts")}))}))</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2021</span> <span id="year">2021</span> <a href="/about" target="_blank">路飞</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">26.9k</span>&nbsp;字 |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次 |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人<br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=864e5,t=new Date,n=t.getFullYear(),o=t.getMonth()+1,r=t.getDate(),a=t.getHours(),i=t.getMinutes(),l=t.getSeconds(),m=Date.UTC("2021","10","24","6","55","36"),M=Date.UTC(n,o,r,a,i,l)-m,g=Math.floor(M/31536e6),d=Math.floor(M/e-365*g),s=Math.floor((M-(365*g+d)*e)/36e5),u=Math.floor((M-(365*g+d)*e-36e5*s)/6e4),T=Math.floor((M-(365*g+d)*e-36e5*s-6e4*u)/1e3);"2021"==n?(document.getElementById("year").innerHTML=n,document.getElementById("sitetime").innerHTML="小破站已安全运行 "+d+" 天 "+s+" 小时 "+u+" 分钟 "+T+" 秒"):(document.getElementById("year").innerHTML="2021 - "+n,document.getElementById("sitetime").innerHTML="小破站已安全运行 "+g+" 年 "+d+" 天 "+s+" 小时 "+u+" 分钟 "+T+" 秒")}setInterval(siteTime,1e3)</script><br><span id="icp"><img src="/medias/icp.png" style="vertical-align:text-bottom"> <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" target="_blank">豫ICP备2021032120号</a></span></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/OnlyLuffy" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i> </a><a href="mailto:319377758@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i> </a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=319377758" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 319377758" data-position="top" data-delay="50"><i class="fab fa-qq"></i> </a><a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50"><i class="fas fa-rss"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script type="text/javascript">$((function(){!function(t,e,r){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var n=$("entry",t).map((function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}})).get(),a=document.getElementById(e),s=document.getElementById(r);a.addEventListener("input",(function(){var t='<ul class="search-result-list">',e=this.value.trim().toLowerCase().split(/[\s\-]+/);s.innerHTML="",this.value.trim().length<=0||(n.forEach((function(r){var n=!0,a=r.title.trim().toLowerCase(),s=r.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),i=r.url;i=0===i.indexOf("/")?r.url:"/"+i;var l=-1,c=-1,u=-1;if(""!==a&&""!==s&&e.forEach((function(t,e){l=a.indexOf(t),c=s.indexOf(t),l<0&&c<0?n=!1:(c<0&&(c=0),0===e&&(u=c))})),n){t+="<li><a href='"+i+"' class='search-result-title'>"+a+"</a>";var o=r.content.trim().replace(/<[^>]+>/g,"");if(u>=0){var h=u-20,f=u+80;h<0&&(h=0),0===h&&(f=100),f>o.length&&(f=o.length);var m=o.substr(h,f);e.forEach((function(t){var e=new RegExp(t,"gi");m=m.replace(e,'<em class="search-keyword">'+t+"</em>")})),t+='<p class="search-result">'+m+"...</p>"}t+="</li>"}})),t+="</ul>",s.innerHTML=t)}))}})}("/search.xml","searchInput","searchResult")}))</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/libs/materialize/materialize.min.js"></script><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/aos/aos.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script src="/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script async src="/libs/others/busuanzi.pure.mini.js"></script><script type="text/javascript" color="242, 49, 74" pointcolor="141, 0, 207" opacity="0.9" zindex="-1" count="56" src="/libs/background/canvas-nest.js"></script><script src="/libs/instantpage/instantpage.js" type="module"></script><script type="text/javascript">var windowWidth=$(window).width();if(windowWidth>768){var script=document.createElement("script");script.src="/js/sakura.js",document.write(script.outerHTML)}</script><script type="text/javascript">var script=document.createElement("script");script.src="/js/lihua.js",document.write(script.outerHTML)</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({pluginRootPath:"live2dw/",pluginJsPath:"lib/",pluginModelPath:"assets/",tagMode:!1,log:!1,model:{jsonPath:"/live2dw/assets/shizuku.model.json"},display:{position:"right",width:160,height:280},mobile:{show:!0},react:{opacity:.8}})</script><script>window.imageLazyLoadSetting={isSPA:!1,preloadRatio:1,processImages:null}</script><script>window.addEventListener("load",(function(){var a=/\.(gif|jpg|jpeg|tiff|png)$/i,e=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach((function(t){var r=t.parentNode;"A"===r.tagName&&(r.href.match(a)||r.href.match(e))&&(r.href=t.dataset.original)}))}))</script><script>!function(t){t.imageLazyLoadSetting.processImages=o;var e=t.imageLazyLoadSetting.isSPA,n=t.imageLazyLoadSetting.preloadRatio||1,i=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(i=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var o,a=0;a<i.length;a++)0<=(o=(o=i[a]).getBoundingClientRect()).bottom&&0<=o.left&&o.top<=(t.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,o,r=i[a];t=r,e=function(){i=i.filter((function(t){return r!==t}))},n=new Image,o=t.getAttribute("data-original"),n.onload=function(){t.src=o,e&&e()},t.src!==o&&(n.src=o)}()}o(),t.addEventListener("scroll",(function(){var e,n;e=o,n=t,clearTimeout(e.tId),e.tId=setTimeout((function(){e.call(n)}),500)}))}(this)</script></body></html>
+<span class="token keyword">done</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>运行结果：</p>
+<p><code>0</code></p>
+<p><code>1</code></p>
+<p><code>2</code>    </p>
+<p><code>3</code></p>
+<h3 id="输入输出重定向"><a href="#输入输出重定向" class="headerlink" title="输入输出重定向"></a>输入输出重定向</h3><table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">command &gt; file</td>
+<td align="left">将输出重定向到 file。</td>
+</tr>
+<tr>
+<td align="left">command &lt; file</td>
+<td align="left">将输入重定向到 file。</td>
+</tr>
+<tr>
+<td align="left">command &gt;&gt; file</td>
+<td align="left">将输出以追加的方式重定向到 file。</td>
+</tr>
+<tr>
+<td align="left">n &gt; file</td>
+<td align="left">将文件描述符为 n 的文件重定向到 file。</td>
+</tr>
+<tr>
+<td align="left">n &gt;&gt; file</td>
+<td align="left">将文件描述符为 n 的文件以追加的方式重定向到 file。</td>
+</tr>
+<tr>
+<td align="left">n &gt;&amp; m</td>
+<td align="left">将输出文件 m 和 n 合并。</td>
+</tr>
+<tr>
+<td align="left">n &lt;&amp; m</td>
+<td align="left">将输入文件 m 和 n 合并。</td>
+</tr>
+<tr>
+<td align="left">&lt;&lt; tag</td>
+<td align="left">将开始标记 tag 和结束标记 tag 之间的内容作为输入。</td>
+</tr>
+</tbody></table>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">路飞</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://luffyblog.top/posts/13507.html">https://luffyblog.top/posts/13507.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">路飞</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Shell/">
+                                    <span class="chip bg-color">Shell</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="facebook,google,qq,wechat,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">您的赏识是俺前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+    <!--    末尾下一个文章的板块-->
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/posts/31015.html">
+                    <div class="card-image">
+                        
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/boji02.jpg" class="responsive-img" alt="back">
+                        
+                        <span class="card-title">back</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-23
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                        <span class="chip bg-color">随记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/4013.html">
+                    <div class="card-image">
+                        
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/craw38.png" class="responsive-img" alt="python爬虫日记">
+                        
+                        <span class="card-title">python爬虫日记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python/" class="post-category">
+                                    python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%9E%8E%E7%8E%A9/">
+                        <span class="chip bg-color">瞎玩</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<!--    尝试加入waline 模块-->
+    
+        <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
+<div id="waline"></div>
+<script>
+    new Waline({
+        el: '#waline',
+        serverURL: 'https://blog-api-dusky-nine.vercel.app/',
+        emoji: [
+            'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+            'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+        ],      // 表情支持
+        avatar: 'monsterid',  // 头像
+        visitor: true,      // 阅读量统计
+    });
+</script>
+    
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('100')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 路飞的小破站<br />'
+            + '文章作者: 路飞<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">路飞</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">27.4k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+<!--            <span id="busuanzi_container_site_pv">-->
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+<!--            </span>-->
+            
+            
+<!--            <span id="busuanzi_container_site_uv">-->
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+<!--            </span>-->
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2021";
+                    var startMonth = "10";
+                    var startDate = "24";
+                    var startHour = "6";
+                    var startMinute = "55";
+                    var startSecond = "36";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "小破站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "小破站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" target="_blank">豫ICP备2021032120号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/OnlyLuffy" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:319377758@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=319377758" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 319377758" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+
+
+</footer>
+
+<div class="progress-bar"></div>
+
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="242, 49, 74"
+        pointColor="141, 0, 207" opacity='0.9'
+        zIndex="-1" count="56"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<!--    添加樱花掉落特效-->
+    
+        <script type="text/javascript">
+            // 只在桌面版网页生效
+            var windowWidth = $(window).width();
+            if(windowWidth > 768) {
+                var script = document.createElement('script');
+                script.src = "/js/sakura.js";
+                document.write(script.outerHTML);
+            }
+        </script>
+    
+<!--添加鼠标点击礼花掉落特效-->
+    
+        <script type="text/javascript">
+            var script = document.createElement('script');
+            script.src = "/js/lihua.js";
+            document.write(script.outerHTML);
+        </script>
+    
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":160,"height":280},"mobile":{"show":true},"react":{"opacity":0.8}});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+
+</html>

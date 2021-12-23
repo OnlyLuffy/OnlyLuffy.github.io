@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java牛客刷题笔记, java,python,mysql,machine learning,hexo,HTML,CSS等">
+    <meta name="keywords" content="back, java,python,mysql,machine learning,hexo,HTML,CSS等">
     <meta name="description" content="我准备好啦,我准备好啦">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>java牛客刷题笔记 | 路飞的小破站</title>
+    <title>back | 路飞的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -295,12 +295,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/rick19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/boji02.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">java牛客刷题笔记</h1>
+                    <h1 class="description center-align post-title">back</h1>
                 </div>
             </div>
         </div>
@@ -416,8 +416,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%89%93%E5%9C%B0%E5%9F%BA/">
-                                <span class="chip bg-color">打地基</span>
+                            <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                                <span class="chip bg-color">随记</span>
                             </a>
                         
                     </div>
@@ -441,28 +441,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-17
+                    2021-12-23
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-24
+                    2021-12-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    549
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    1 分
                 </div>
                 
 
@@ -485,101 +485,51 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="新生代-老年代-永久代"><a href="#新生代-老年代-永久代" class="headerlink" title="新生代,老年代,永久代"></a>新生代,老年代,永久代</h2><p>第一次听这个几个词😅了解一下。</p>
-<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211020155330518.png" alt="JVM堆的划分"></p>
-<p>JVM中的堆一般分为3部分:</p>
-<ol>
-<li><p><strong>新生代</strong></p>
-<p>主要是用来存放新生的对象。一般占据堆空间的1/3，由于频繁创建对象，所以新生代会频繁触发MinorGC进行垃圾回收。</p>
-<ul>
-<li>Eden区:Java新对象的出生地(如果新创建的对象占用内存很大则直接分配给老年代)。<strong>当Eden区内存不够的时候就会触发一次MinorGc</strong>，对新生代区进行一次垃圾回收。</li>
-<li>Servivor To:保留了一次MinorGc过程中的幸存者。</li>
-<li>Servivor From:上一次GC的幸存者，作为这一次GC的被扫描者。<br>当JVM无法为新建对象分配内存空间的时候(Eden区满的时候)，JVM触发MinorGc。因此新生代空间占用越低，MinorGc越频繁。<br>MinorGC采用复制算法。</li>
-</ul>
-</li>
-<li><p><strong>老年代</strong></p>
-<p>老年代的对象比较稳定，所以MajorGC不会频繁执行。</p>
-<p>触发MinorGC的条件：<br> 在进行MajorGC之前，一般都先进行了一次MinorGC，使得有新生代的对象进入老年代，当老年代空间不足时就会触发MajorGC。当无法找到足够大的连续空间分配给新创建的较大对象时，也会触发MajorGC进行垃圾回收腾出空间。</p>
-</li>
-</ol>
-<p> MajorGC采用标记—清除算法(或者标记—整理算法), MajorGC的耗时比较长，因为要先整体扫描再回收，MajorGC会产生内存碎片。为了减少内存损耗，一般需要合并或者标记出来方便下次直接分配。</p>
-<p>   <strong>当老年代也满了装不下的时候，就会抛出OOM。</strong></p>
-<ol start="3">
-<li><p><strong>永久代</strong></p>
-<p>指内存的永久保存区域，主要存放Class和Meta（元数据）的信息。<br> Class在被加载的时候元数据信息会放入永久区域，但是GC不会在主程序运行的时候清除永久代的信息。<strong>所以这也导致永久代的信息会随着类加载的增多而膨胀，最终导致OOM.</strong></p>
-<p>元空间的本质和永久代类似，都是对JVM规范中方法区的实现。不过元空间与永久代之间最大的区别在于：<strong>元空间并不在虚拟机中，而是使用本地内存。</strong>因此默认情况下元空间的大小仅仅受本地内存的大小限制。类的元数据放入 native memory, 字符串池和类的静态变量放入java堆中。 这样可以加载多少类的元数据就不再由MaxPermSize控制, 而由系统的实际可用空间来控制。</p>
-</li>
-</ol>
-<h2 id="StringBuffer-和-StringBuilder-类"><a href="#StringBuffer-和-StringBuilder-类" class="headerlink" title="StringBuffer 和 StringBuilder 类"></a>StringBuffer 和 StringBuilder 类</h2><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211020162746390.png" alt="继承关系"></p>
-<p>当对字符串进行修改时， 需要用到这俩，因为String的值是不变的。</p>
-<p>两者最大区别</p>
-<ul>
-<li><p>StringBuilder<strong>线程不安全</strong>， 速度有优势</p>
-<ul>
-<li>单线程操作字符串缓冲区下操作大量数据 </li>
-</ul>
-</li>
-<li><p>StringBuffer <strong>线程安全</strong></p>
-<ul>
-<li>多线程操作字符串缓冲区下操作大量数据</li>
-</ul>
-</li>
-</ul>
-<p>常用方法： append(), insert(), delete()…</p>
-<h2 id="import"><a href="#import" class="headerlink" title="import *;"></a>import *;</h2><ul>
-<li>java导包import * 是导入当前层下所有子类, 不包括子包下的类.(禁止套娃 🙅🈲)</li>
-</ul>
-<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211020170435417.png"></p>
-<h2 id="四舍五入"><a href="#四舍五入" class="headerlink" title="四舍五入"></a>四舍五入</h2><ul>
-<li>floor–地板    :向下取整, 返回double;</li>
-<li>ceil–天花板    :向上取整, 返回double;</li>
-</ul>
-<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211020170600569.png"></p>
-<ul>
-<li>round(),    四舍五入.<ul>
-<li>🐖①： <strong>返回类型</strong></li>
-</ul>
-</li>
-</ul>
-<h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://uploadfiles.nowcoder.com/images/20190109/242025553_1547012774538_BA9669C5826A238ACEC0BD86755FA5DB" alt="看到就烦"></p>
-<p>嵌套类(内部类):</p>
-<ul>
-<li><p>非静态内部类</p>
-<ul>
-<li>有访问外部类成员的权限, 叫内部类.</li>
-<li>🐖: 先实例化外部类, 再创建内部类的对象来实现.</li>
-</ul>
-</li>
-</ul>
-<p>接口中的成员变量都是<code>public static final</code>(默认不写)的，一般用作常量。</p>
-<p>🐄🐄<strong>CopyOnWrite</strong>的核心思想是利用高并发往往是读多写少的特性，对读操作不加锁，对写操作，先复制一份新的集合，在新的集合上面修改，然后将新集合赋值给旧的引用。</p>
-<p><strong>分段加锁</strong>，只在影响读写的地方加锁，锁可以用读写锁，可以提高效率</p>
-<p><strong>Interger</strong> 赋予的int数值在 <code>-128 --- 127</code> 的时候, 直接从 cache 中获取, 这些cache引用对Interger对象地址是不变的.</p>
-<h2 id="编码问题"><a href="#编码问题" class="headerlink" title="编码问题"></a>编码问题</h2><p>对于汉字占多少个字节的问题， 不同编码方式下：</p>
-<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211124115424366.png" alt="test"></p>
-<p>控制台打印：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token number">1</span>		<span class="token comment">// ISO8859-1</span>
-<span class="token number">2</span>		<span class="token comment">// GBK</span>
-<span class="token number">3</span>		<span class="token comment">// UTF_8</span>
-<span class="token number">4</span>		<span class="token comment">// UTF_16</span>
-<span class="token number">1</span>		<span class="token comment">// US_ASCII</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2 id="😡😡😡"><a href="#😡😡😡" class="headerlink" title="😡😡😡"></a>😡😡😡</h2><h3 id="真是让人头大🎅"><a href="#真是让人头大🎅" class="headerlink" title="真是让人头大🎅"></a>真是让人头大🎅</h3><p>事情的源头是昨天突然等不上mysql，发现是mysql服务无法启动，搜了各种办法，有的是删除data文件夹重新初始化一下，等等。均没有解决我的问题，最后实在没招，想着重装吧。😭😭😭</p>
+<p>结果把mysql卸载干净后，开心的用流量下了安装包，然后一步步的安装，感觉没问题了，结果卡在最后一步的<code>starting the server...</code>于是搜各种安装方法，各种重装，结果都是卡在这里。</p>
+<p>🌿👿，我一直在试图回想这几天电脑改了啥导致mysql启动不了。</p>
+<p>最后矛头锁定在了电脑用户名上🤡🤡🤡，因为前几天突然想着改一下用户名。</p>
+<p>安装时不应该出现中文路径。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211223162545521.png" alt="淦！"></p>
+<p>把这些名字改了之后，依旧没能启动🃏🃏🃏</p>
+<p>还能干啥，把电脑用户名改成无中文的。🎅🎅🎅🎅🎅</p>
+<p>🐎中🐎，总算解决问题了。</p>
+<br>
 
-<h4 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a>Unicode</h4><p>因为Unicode兼容了大多数老版本的编码规范例如 ASCII,Unicode编码定义了这个世界上几乎所有字符（就是你眼睛看到的长那个样子的符号）的数字表示,也就是说Unicode为每个字符发了一张身份证，这张身份证上有一串唯一的数字ID确定了这个字符.在这个纷乱世界上存在的唯一性。Unicode给这串数字ID起了个名字叫<strong>［码点］（Code Point）</strong>。而很多人说的编码其实是想表达<strong>［Unicode转换格式］（即UTF，Unicode Transformation Formats）</strong></p>
-<p>有没有觉得眼前一亮豁然开朗？没错 这就是我们看到的UTF-8/UTF-16/UTF-32的前缀来源</p>
-<p>［码点］经过映射后得到的二进制串的转换格式单位称之为<strong>［码元］（Code Unit）</strong>。也就是说如果有一种UTF的码点二进制表示有n字节，其码元为8位（1个byte），那么其拥有码元n个。每种UTF的码元都不同，其宽度被作为区分写在了UTF的后缀——这就是UTF-8/UTF-16/UTF-32的由来。UTF-8的码元是8位的，UTF-16的码元是16位的。大部分的编程语言采用16位的码元作为机内表示。这就是我们在各种语言中调用获取一个字符串中character的数量时会出现这么多混乱的原因。事实上我们调用这些方法时取得的不是字符个数，而是<strong>码元个数</strong>！一旦我们的字符串中包含了位于基本平面之外的码点，那么就会需要更多的码元来表示，这个时候就会出现测试时常见的困惑——为何return的字符数比实际字符数要多？所以实际写代码时要特别注意这个问题。</p>
-<p>采取不同的映射方式可以得到不同格式的二进制串，但是他们背后所表示的［码点］永远是一致的就好像你换身份证但是身份证号不变一样。由于平时人们误把［转换格式］也称为［编码］，所以造成今天Unicode／UTF傻傻分不清楚且遣词造句运用混乱的悲桑局面。</p>
-<p>Unicode 编码 发展到今天 扩展到了 21 位（从 U+0000 到 U+10FFFF ）。这一点很重要： <strong>Unicode</strong> <strong>不是</strong> <strong>16</strong> <strong>位的编码，</strong> 它是 21 位的。这 21 位提供了 1,114,112 个码点，其中，只有大概 10% 正在使用，所以还有相当大的扩充空间。</p>
-<p>编码空间被分成 17 个<strong>平面</strong>（plane），每个平面有 65,536 个字符（正好填充2个字节，16位）。0 号平面叫做<strong>「基本多文种平面」（</strong> <strong>BMP,</strong> <strong>Basic Multilingual Plane</strong> <strong>）</strong>，涵盖了几乎所有你能遇到的字符，除了 emoji（emoji位于1号平面 - -）。其它平面叫做补充平面，大多是空的。</p>
-<h4 id="总结一下各种编码格式的特质："><a href="#总结一下各种编码格式的特质：" class="headerlink" title="总结一下各种编码格式的特质："></a>总结一下各种编码格式的特质：</h4><p><strong>UTF-32</strong></p>
-<p>最清楚明了的一个 UTF 就是 UTF<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/UTF-32">-</a>32 ：它在每个码点上使用整 32 位。32 大于 21，因此每一个 UTF-32 值都可以直接表示对应的码点。尽管简单，UTF-32却几乎从来不在实际中使用，因为每个字符占用 4 字节太浪费空间了。</p>
-<p><strong>UTF-16</strong> <strong>以及「***对」（</strong> <strong>Surrogate Pairs</strong> <strong>）的概念</strong></p>
-<p>UTF<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/UTF-16">-</a>16要常见得多，它是根据有 16 位固定长度的<strong>码元（</strong> <strong>code units</strong> <strong>）</strong>定义的。UTF-16 本身是一种长度可变的编码。基本多文种平面（BMP）中的每一个码点都直接与一个码元相映射。鉴于 BMP 几乎囊括了所有常见字符，UTF-16 一般只需要 UTF-32 一半的空间。其它平面里很少使用的码点都是用两个 16 位的码元来编码的，这两个合起来表示一个码点的码元就叫做**<em>*<em>对（</em></em> <strong>surrogate pair</strong> <strong>）</strong>。</p>
-<p><strong>UTF-8</strong></p>
-<p>UTF-8 使用一到四个字节来编码一个码点。从 0 到 127 的这些码点直接映射成 1 个字节（对于只包含这个范围字符的文本来说，这一点使得 UTF-8 和 ASCII 完全相同）。接下来的 1,920 个码点映射成 2 个字节，在 BMP 里所有剩下的码点需要 3 个字节。Unicode 的其他平面里的码点则需要 4 个字节。UTF-8 是基于 8 位的码元的，因此它并不需要关心字节顺序（不过仍有一些程序会在 UTF-8 文件里加上多余的 BOM）。</p>
-<p>有效率的空间使用（仅就西方语言来讲），以及不需要操心字节顺序问题使得 UTF-8 成为存储和交流 Unicode 文本方面的最佳编码。它也已经是文件格式、网络协议以及 Web API 领域里<strong>事实上</strong>的标准了。</p>
-<p>我们的JVM中保存码点是UTF16的转换格式，从char的位宽为16位也可以看得出来。由于绝大部分编码的码点位于基本平面，所以使用16位可以几乎表示所有常用字符。这就是许多语言编译器或运行时都使用UTF16的原因。英文在使用UTF16时也是2字节表示的。当我们想要使用其他平面的字符时，码元超过2个字节，就需要使用***对在语言中的特定表示方式，譬如‘\U112233’之类的。</p>
-<p>使用UTF8时，常用的Alphabet和Numeric都在前127字节，被有效率地用一个字节表示。而我们的中文由于排在1920个码点之后，所以使用3个字节表示，这方面就比UTF16转换格式耗费更多空间。</p>
-<p>最后，不论使用哪种UTF转换格式，都是程序员自己可以选择的一种表达方式而已。我们可以通过Java方便的API进行自如转换。</p>
+<p>好久没回小破站更博客了👻👻👻</p>
+<br>
+
+<p>登录与注册界面也算简单，数据库的简单操作，输入的数据通过JS提前校验，关于如何美观的提示，俺还不会，直接用<code>alert()</code>多是一件美事儿🤬，还有许多有待优化的地方。</p>
+<h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><p>前端样式也不会写，于是就用了网上现成的轮子🦽🦽🦽。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211223163424108.png" alt="注册页面"></p>
+<p>表单数据提交到Servlet, 然后数据库写入，成功后跳转到登录界面。</p>
+<p>整个逻辑还算简单。</p>
+<h3 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h3><p>登录与注册大体一致，用户输入账号密码后，通过比对数据库里的信息即可。</p>
+<p>两者都在提交前校验是否为空。</p>
+<p>测试：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211223163821206.png" alt="登录"></p>
+<p>点击登录：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211223163855581.png"></p>
+<p>这里Servlet打印结果，显示成功。</p>
+<h3 id="忘记密码"><a href="#忘记密码" class="headerlink" title="忘记密码"></a>忘记密码</h3><p>这个页面还在构思中，后续想到再填坑吧！😮‍💨😮‍💨😮‍💨</p>
+<h4 id="后续就是主页面的设计了"><a href="#后续就是主页面的设计了" class="headerlink" title="后续就是主页面的设计了"></a>后续就是主页面的设计了</h4><ol>
+<li>管理员登录<ul>
+<li>商品信息列表</li>
+<li>数据库CURD操作</li>
+<li>管理账号信息</li>
+<li>…</li>
+</ul>
+</li>
+<li>普通用户登录<ul>
+<li>美观的浏览商品界面</li>
+<li>搜索商品信息</li>
+<li>…</li>
+</ul>
+</li>
+</ol>
+<h2 id="Continue…"><a href="#Continue…" class="headerlink" title="Continue…"></a>Continue…</h2><p>back了，但没完全back🤔🤔🤔</p>
+<p>先把期末对付过去再说，近期就记录一下java课设的过程吧。</p>
+<p>✈️✈️✈️溜了</p>
 
                 
             </div>
@@ -606,7 +556,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luffyblog.top/posts/21918.html">https://luffyblog.top/posts/21918.html</a>
+                    <a href="https://luffyblog.top/posts/31015.html">https://luffyblog.top/posts/31015.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -644,8 +594,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%89%93%E5%9C%B0%E5%9F%BA/">
-                                    <span class="chip bg-color">打地基</span>
+                                <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                                    <span class="chip bg-color">随记</span>
                                 </a>
                             
                         </div>
@@ -801,16 +751,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/14539.html">
+                <a href="/posts/31015.html">
                     <div class="card-image">
                         
-                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/rick09.jpg" class="responsive-img" alt="linux指令01">
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/boji02.jpg" class="responsive-img" alt="back">
                         
-                        <span class="card-title">linux指令01</span>
+                        <span class="card-title">back</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -820,9 +771,58 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                        <span class="chip bg-color">随记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/13507.html">
+                    <div class="card-image">
+                        
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/beauty297.png" class="responsive-img" alt="linux04">
+                        
+                        <span class="card-title">linux04</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -838,56 +838,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B9%B2%E8%B4%A7%E6%8C%87%E4%BB%A4/">
-                        <span class="chip bg-color">干货指令</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/25204.html">
-                    <div class="card-image">
-                        
-                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/rick11.jpg" class="responsive-img" alt="pyExcel">
-                        
-                        <span class="card-title">pyExcel</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-17
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/python/" class="post-category">
-                                    python
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%9E%8E%E7%8E%A9/">
-                        <span class="chip bg-color">瞎玩</span>
+                    <a href="/tags/Shell/">
+                        <span class="chip bg-color">Shell</span>
                     </a>
                     
                 </div>
