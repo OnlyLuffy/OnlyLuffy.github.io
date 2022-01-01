@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="java,python,mysql,machine learning,hexo,HTML,CSS等">
+    <meta name="keywords" content="java课设, java,python,mysql,machine learning,hexo,HTML,CSS等">
     <meta name="description" content="我准备好啦,我准备好啦">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>路飞的小破站</title>
+    <title>java课设 | 路飞的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -295,12 +295,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/luffy01.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220101185931.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">java课设</h1>
                 </div>
             </div>
         </div>
@@ -414,12 +414,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/">
+                                <span class="chip bg-color">课程设计</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -428,28 +441,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-24
+                    2022-01-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-24
+                    2022-01-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    39
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -472,8 +485,171 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<p>title: 404<br>date: 2021-10-24 6:55:36<br>type: “404”<br>layout: “404”<br>description: “这里啥也没有， 快去学习l0v0”<br>description: “别看了,这里啥也没有,快去学习…0^0”</p>
+                <h1 id="2022-1-1"><a href="#2022-1-1" class="headerlink" title="2022-1-1"></a>2022-1-1</h1><p>🎆🎇🧨🎆🎇🧨🎆🎇🧨🎆🎇🧨🎆🎇🧨</p>
+<h2 id="实验目的"><a href="#实验目的" class="headerlink" title="实验目的"></a>实验目的</h2><ol>
+<li>掌握Java程序开发的基本方法。</li>
+<li>掌握面向对象程序设计技术</li>
+<li>设计并实现一个商品信息管理系统，包含以下功能<ul>
+<li>用户注册、登录；</li>
+<li>商品信息的浏览、查找与增删改维护；</li>
+<li>要采用JDBC数据库；</li>
+<li>界面选用Swing技术或JSP技术。</li>
+</ul>
+</li>
+</ol>
+<h2 id="程序总体设计"><a href="#程序总体设计" class="headerlink" title="程序总体设计"></a>程序总体设计</h2><h3 id="模块划分与层次结构"><a href="#模块划分与层次结构" class="headerlink" title="模块划分与层次结构"></a>模块划分与层次结构</h3><p>程序主要划分为三个模块：</p>
+<ol>
+<li><p>登录注册模块</p>
+<p>主要涉及用户进入系统前的身份校验，提供注册账号，忘记密码的重置，登录功能。</p>
+</li>
+<li><p>普通用户模块</p>
+<p>该模块主要是普通用户浏览商品信息，并下单，在购物车显示下单商品，并提供结算功能。</p>
+</li>
+<li><p>管理员用户模块</p>
+<p>该模块主要为商品与用户信息的维护，实现增删改查操作。</p>
+</li>
+</ol>
+<p>层次结构：</p>
+<ul>
+<li><p>数据存储层</p>
+<p>通过MySQL数据库存放数据。</p>
+</li>
+<li><p>数据显示层</p>
+<p>从MySQL数据库中查找数据并予以显示。</p>
+</li>
+<li><p>数据操作层</p>
+<p>涉及数据库的CURD，JDBC实现增删改查。</p>
+</li>
+<li><p>Web应用层</p>
+<p>涉及页面间请求的发送与响应，Servlet+JSP实现。</p>
+</li>
+</ul>
+<h3 id="程序总体框架"><a href="#程序总体框架" class="headerlink" title="程序总体框架"></a>程序总体框架</h3><p>总体框架结构图：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230200910906.png" alt="框架图"></p>
+<p>程序结构截图：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230105006828.png" alt="文件目录结构"></p>
+<p>Web结构图：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230105048613.png" alt="web结构"></p>
+<p>程序流程图：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230202813836.png" alt="程序流程图"></p>
+<h2 id="功能模块程序设计和调试"><a href="#功能模块程序设计和调试" class="headerlink" title="功能模块程序设计和调试"></a>功能模块程序设计和调试</h2><ul>
+<li><p>Filter（过滤器）的使用</p>
+<p>在系统整体功能完善后，加入了过滤器，映射路径为（/*），主要通过判断HttpSession是否存有User对象来决定是否放行，对于登录，注册，静态资源文件（CSS,JavaScript等）列入白名单。</p>
+<p>因此，当用户在未登录的前提下，企图访问商品详情等界面时会被拦截，重定向到登录界面并提示未登录。</p>
+</li>
+<li><p>登录/注册/忘记密码界面文本框校验</p>
+<p>利用JavaScript在表单提交前校验是否存在文本框输入为空的情况，以及利用正则表达式判断账号输入是否符合格式。</p>
+</li>
+<li><p>form表单数据提交后的提示反馈</p>
+<p>为了让用户更直观地了解某个操作成功或失败，在Servlet处理数据完成后，重定向时的URL附加一些参数，用于页面根据参数显示对应结果的提示框。比如登录失败会在页面顶部提醒账号或密码有误，请重试的反馈信息。</p>
+</li>
+<li><p>前端样式的使用</p>
+<p>主要引入Bootstrap4官方样式，对数据库获取的商品信息加以渲染显示，在浏览商品主页会显示商品的图片信息、商品名称、原价、现价，点击详情按钮会跳转至对应商品的详细信息界面，包括产地、生产日期、描述信息等。</p>
+</li>
+<li><p>JDBC模块</p>
+<p>对于数据库信息的操作，共有三个数据表User, Cart, Goods。分别封装了三个数据库操作类（UserSql、CartSql、GoodsSql），实现对应数据表的增删改查。</p>
+<ul>
+<li><p>UserSql</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230211929819.png" alt="UserSql"></p>
+</li>
+<li><p>CartSql</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230212032082.png" alt="CartSql"></p>
+</li>
+<li><p>GoodsSql</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230211955730.png" alt="GoodsSql"></p>
+</li>
+</ul>
+</li>
+<li><p>购物车功能模块：用户点击加入购物车按钮，表单数据提交到Servlet处理，将商品主要信息以及下单数量，总价格存入购物车的数据表中，在购物车界面中，即将数据库中存放的下单商品信息一一打印出来，最后的结算按钮，会计算所有下单商品的总价格，弹出付款界面。</p>
+</li>
+<li><p>管理员界面，涉及对商品信息以及用户的信息的维护，主要为增加与删除操作，每一个操作模块对应一个Servlet处理，然后页面重定向，附带URL参数标志操作的成功与否。</p>
+</li>
+</ul>
+<h2 id="程序运行结果说明"><a href="#程序运行结果说明" class="headerlink" title="程序运行结果说明"></a>程序运行结果说明</h2><ul>
+<li><p>首先默认进入注册界面，如下图。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230105616742.png"></p>
+</li>
+<li><p>已有账号，则点击下方登录界面。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230105752335.png"></p>
+</li>
+<li><p>输入密码，如果账号或密码错误，请求驳回，提示：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230105832957.png"></p>
+</li>
+<li><p>登录成功，普通用户界面，会显示账号和名称，如图：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230105922272.png"></p>
+</li>
+<li><p>点击Goods, 浏览商品：</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230110019029.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230110042918.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230110117281.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230110127697.png"></p>
+</li>
+<li><p>右下方向上箭头，点击回到页面顶部。</p>
+</li>
+<li><p>选中商品详情按钮，进入详情界面</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230110254843.png"></p>
+</li>
+<li><p>点击加入购物车</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230110325528.png"></p>
+<p>加入成功。</p>
+</li>
+<li><p>点击购物车界面</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111107223.png"></p>
+<p>点击结算按钮。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111129606.png"></p>
+<p>然后点击付款完成，清空购物车。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111208945.png"></p>
+</li>
+<li><p>点击退出登录。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111318988.png"></p>
+<p>确定登出后</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111336856.png"></p>
+</li>
+<li><p>输入管理员账号密码，进入管理员界面</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111416474.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111433714.png"></p>
+</li>
+<li><p>查看商品数据表</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111542267.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="D:/picture-typora/image-20211230111553159.png" alt="image-20211230111553159"></p>
+</li>
+<li><p>上架商品</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111802110.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111659274.png"></p>
+<ul>
+<li><p>编号重复，提交后会提示失败</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230111731145.png"></p>
+</li>
+<li><p>输入商品信息，提交</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230112053493.png"></p>
+<p>上架成功</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230112125296.png"></p>
+<p>搜索刚刚上架的商品</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230112238656.png"></p>
+<ul>
+<li><p>下架商品，通常先输入名称或编号查找一下相关信息，确认后点击删除。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230112349096.png"></p>
+<p>下架成功</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230112545679.png"></p>
+</li>
+<li><p>修改商品信息</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230120052679.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230120101136.png"></p>
+<p>修改现价为9.9， 产地为厦门</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230120623365.png"></p>
+</li>
+<li><p>用户数据表</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230120659545.png"></p>
+<p>主要提供删除功能，查询后，点击删除账号。</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230120755648.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230120801761.png"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211230120819594.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
                 
             </div>
@@ -500,7 +676,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luffyblog.top/404.html">https://luffyblog.top/404.html</a>
+                    <a href="https://luffyblog.top/posts/63722.html">https://luffyblog.top/posts/63722.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -537,7 +713,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/">
+                                    <span class="chip bg-color">课程设计</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -696,13 +876,12 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/posts/63722.html">
                     <div class="card-image">
                         
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220101185931.png" class="responsive-img" alt="java课设">
                         
-                        <img src="/medias/featureimages/luffy01.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">java课设</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -713,17 +892,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            路飞
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">课程设计</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -731,16 +922,15 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/posts/31015.html">
                     <div class="card-image">
                         
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/boji02.jpg" class="responsive-img" alt="back">
                         
-                        <img src="/medias/featureimages/luffy01.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">back</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -751,17 +941,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-23
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            路飞
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                        <span class="chip bg-color">随记</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
