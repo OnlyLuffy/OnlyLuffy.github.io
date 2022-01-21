@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="waline评论部署, java,python,mysql,machine learning,hexo,HTML,CSS等">
+    <meta name="keywords" content="《书法--从入门到入门》第二集, java,python,mysql,machine learning,hexo,HTML,CSS等">
     <meta name="description" content="我准备好啦,我准备好啦">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>waline评论部署 | 路飞的小破站</title>
+    <title>《书法--从入门到入门》第二集 | 路飞的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -295,12 +295,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/rick23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220121180629.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">waline评论部署</h1>
+                    <h1 class="description center-align post-title">《书法--从入门到入门》第二集</h1>
                 </div>
             </div>
         </div>
@@ -416,8 +416,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/">
-                                <span class="chip bg-color">博客优化</span>
+                            <a href="/tags/%E7%AC%94%E7%94%BB%E7%BB%83%E4%B9%A0/">
+                                <span class="chip bg-color">笔画练习</span>
                             </a>
                         
                     </div>
@@ -428,8 +428,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%90%AF%E8%88%AA/" class="post-category">
-                                启航
+                            <a href="/categories/%E4%B9%A6%E6%B3%95/" class="post-category">
+                                书法
                             </a>
                         
                     </div>
@@ -441,21 +441,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-10-31
+                    2022-01-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-24
+                    2022-01-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    238
+                    180
                 </div>
                 
 
@@ -485,31 +485,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Waline"><a href="#Waline" class="headerlink" title="Waline"></a>Waline</h3><p>弃用了之前的valine.🐒🐒</p>
-<ul>
-<li><h5 id="这里采用的是LeanCloud-国际版-数据库-Vercel部署-服务端"><a href="#这里采用的是LeanCloud-国际版-数据库-Vercel部署-服务端" class="headerlink" title="这里采用的是LeanCloud(国际版)(数据库) + Vercel部署(服务端)."></a>这里采用的是LeanCloud(国际版)(数据库) + Vercel部署(服务端).</h5></li>
-<li><h5 id="免费的-🦄🦄"><a href="#免费的-🦄🦄" class="headerlink" title="免费的.🦄🦄"></a>免费的.🦄🦄</h5></li>
-<li><h5 id="教程也很简单-直接-参考-waline官方文档"><a href="#教程也很简单-直接-参考-waline官方文档" class="headerlink" title="教程也很简单, 直接 参考 waline官方文档."></a>教程也很简单, 直接 参考 <a target="_blank" rel="noopener" href="https://waline.js.org/">waline官方文档</a>.</h5></li>
-<li><h5 id="在生成的网址下-后缀-ui-register-进入-第一个注册为管理员"><a href="#在生成的网址下-后缀-ui-register-进入-第一个注册为管理员" class="headerlink" title="在生成的网址下, 后缀 /ui/register 进入 第一个注册为管理员"></a>在生成的网址下, 后缀 /ui/register 进入 第一个注册为管理员</h5></li>
-<li><h5 id="跟着教程把评论区网页造好之后-就要应用到-matery主题下了"><a href="#跟着教程把评论区网页造好之后-就要应用到-matery主题下了" class="headerlink" title="跟着教程把评论区网页造好之后, 就要应用到 matery主题下了."></a>跟着教程把评论区网页造好之后, 就要应用到 matery主题下了.</h5></li>
-</ul>
-<h4 id="在themes-matery-layout-partial-路径下创建-waline-ejs文件"><a href="#在themes-matery-layout-partial-路径下创建-waline-ejs文件" class="headerlink" title="在themes/matery/layout/_partial 路径下创建 waline.ejs文件"></a>在themes/matery/layout/_partial 路径下创建 waline.ejs文件</h4><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"//cdn.jsdelivr.net/npm/@waline/client"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"waline"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
-    <span class="token keyword">new</span> <span class="token class-name">Waline</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        el<span class="token operator">:</span> <span class="token string">'#waline'</span><span class="token punctuation">,</span>
-        serverURL<span class="token operator">:</span> <span class="token string">'&lt;%- theme.waline.serverURL %&gt;'</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <p>1</p>
+<h2 id="书法入门第4天"><a href="#书法入门第4天" class="headerlink" title="书法入门第4天"></a>书法入门第4天</h2><p>今天竟然下雪了！❄️❄️❄️可惜下的比较小😢</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/@U4CVW@Q%60AV%7B_W~0MZ5N49G.jpg" alt="小雪花"></p>
+<p>我还破费的买了田英章老师的字帖，明天应该就到了✌。</p>
+<p>这练字多是一件美事儿啊😅😅😅</p>
+<p>书法真的是需要打磨很久的呀，细微的字形差别就会影响整体效果，不过我觉得经过这两天的练习，还算是写出了几个xue微能拿得出手的字吧🤔🤔🤔</p>
+<hr>
 
-<p>contact, friend界面根据需要添加.</p>
-<p>主题配置文件中配置如下:</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">waline</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">serverURL</span><span class="token punctuation">:</span> <span class="token string">"前面生成的网址"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>🐖: 主要没找到参考教程, 不知道怎么改代码, 就草草的模仿着改了一下.</p>
-<p>一个问题: 这样简单地添加后 , front-matter 中的 comments对waline也就不起作用, 还没发现在哪里配置解决问题.🐒</p>
+
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220121181401202.png" alt="公"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220121181412076.png" alt="文"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220121181423026.png" alt="横"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220121181510394.png" alt="春"><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="C:/Users/ACEone/AppData/Roaming/Typora/typora-user-images/image-20220121181709590.png" alt="大春"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220121181531195.png" alt="很多春"></p>
+<blockquote>
+<p>今天练的这个 **春 **字对我来说还是有很大的难度的呀，总体没有写出理想的效果🤔🤔🤔</p>
+</blockquote>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220121181745564.png" alt="人文"></p>
+<h2 id="Last-of-all"><a href="#Last-of-all" class="headerlink" title="Last of all"></a>Last of all</h2><p>spring也就开了个坑，找机会跟进学习一下吧🤔</p>
+<p>tnnd，这天冷的电脑都不想碰🥶🥶🥶</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220121182112657.png"></p>
+<p><code>To be Continue...</code></p>
 
                 
             </div>
@@ -536,7 +534,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luffyblog.top/posts/19631.html">https://luffyblog.top/posts/19631.html</a>
+                    <a href="https://luffyblog.top/posts/33631.html">https://luffyblog.top/posts/33631.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -574,8 +572,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/">
-                                    <span class="chip bg-color">博客优化</span>
+                                <a href="/tags/%E7%AC%94%E7%94%BB%E7%BB%83%E4%B9%A0/">
+                                    <span class="chip bg-color">笔画练习</span>
                                 </a>
                             
                         </div>
@@ -731,16 +729,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/38927.html">
+                <a href="/posts/33631.html">
                     <div class="card-image">
                         
-                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/luffy15.jpg" class="responsive-img" alt="matery主题美化">
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220121180629.png" class="responsive-img" alt="《书法--从入门到入门》第二集">
                         
-                        <span class="card-title">matery主题美化</span>
+                        <span class="card-title">《书法--从入门到入门》第二集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -750,26 +749,27 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%90%AF%E8%88%AA/" class="post-category">
-                                    启航
+                            <a href="/categories/%E4%B9%A6%E6%B3%95/" class="post-category">
+                                    书法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/">
-                        <span class="chip bg-color">博客优化</span>
+                    <a href="/tags/%E7%AC%94%E7%94%BB%E7%BB%83%E4%B9%A0/">
+                        <span class="chip bg-color">笔画练习</span>
                     </a>
                     
                 </div>
@@ -783,12 +783,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/64459.html">
+                <a href="/posts/4901.html">
                     <div class="card-image">
                         
-                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/luffy14.jpg" class="responsive-img" alt="picgo+七牛云图床demo">
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220118191634.png" class="responsive-img" alt="《书法--从入门到入门》第一集">
                         
-                        <span class="card-title">picgo+七牛云图床demo</span>
+                        <span class="card-title">《书法--从入门到入门》第一集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -799,14 +799,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-18
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%90%AF%E8%88%AA/" class="post-category">
-                                    启航
+                            <a href="/categories/%E4%B9%A6%E6%B3%95/" class="post-category">
+                                    书法
                                 </a>
                             
                             
@@ -816,8 +816,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                        <span class="chip bg-color">博客搭建</span>
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AC%94%E7%94%BB/">
+                        <span class="chip bg-color">基础笔画</span>
                     </a>
                     
                 </div>
