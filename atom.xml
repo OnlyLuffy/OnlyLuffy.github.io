@@ -6,7 +6,7 @@
   <link href="https://luffyblog.top/atom.xml" rel="self"/>
   
   <link href="https://luffyblog.top/"/>
-  <updated>2022-01-21T10:23:10.438Z</updated>
+  <updated>2022-01-25T12:51:48.478Z</updated>
   <id>https://luffyblog.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《书法--从入门到入门》第三集</title>
+    <link href="https://luffyblog.top/posts/36646.html"/>
+    <id>https://luffyblog.top/posts/36646.html</id>
+    <published>2022-01-25T12:11:55.000Z</published>
+    <updated>2022-01-25T12:51:48.478Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;书法入门第8天&quot;&gt;&lt;a href=&quot;#书法入门第8天&quot; class=&quot;headerlink&quot; title=&quot;书法入门第8天&quot;&gt;&lt;/a&gt;书法入门第8天&lt;/h2&gt;&lt;p&gt;掰着手指数了一下，这已经是第8天了🥶🥶</summary>
+        
+      
+    
+    
+    
+    <category term="书法" scheme="https://luffyblog.top/categories/%E4%B9%A6%E6%B3%95/"/>
+    
+    
+    <category term="字形练习" scheme="https://luffyblog.top/tags/%E5%AD%97%E5%BD%A2%E7%BB%83%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>《书法--从入门到入门》第二集</title>
@@ -488,31 +513,6 @@
         
     <summary type="html">&lt;p&gt;下面引入一段名言.&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through</summary>
-        
-      
-    
-    
-    
-    <category term="启航" scheme="https://luffyblog.top/categories/%E5%90%AF%E8%88%AA/"/>
-    
-    
-    <category term="demo" scheme="https://luffyblog.top/tags/demo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://luffyblog.top/posts/16107.html"/>
-    <id>https://luffyblog.top/posts/16107.html</id>
-    <published>2021-10-26T11:22:59.408Z</published>
-    <updated>2021-11-15T13:34:00.330Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
         
       
     
