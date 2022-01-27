@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="pyExcel, java,python,mysql,machine learning,hexo,HTML,CSS等">
+    <meta name="keywords" content="《书法--从入门到入门》第四集, java,python,mysql,machine learning,hexo,HTML,CSS等">
     <meta name="description" content="我准备好啦,我准备好啦">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>pyExcel | 路飞的小破站</title>
+    <title>《书法--从入门到入门》第四集 | 路飞的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -295,12 +295,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/rick11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220127194050.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">pyExcel</h1>
+                    <h1 class="description center-align post-title">《书法--从入门到入门》第四集</h1>
                 </div>
             </div>
         </div>
@@ -416,8 +416,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%9E%8E%E7%8E%A9/">
-                                <span class="chip bg-color">瞎玩</span>
+                            <a href="/tags/%E5%AD%97%E5%BD%A2%E7%BB%83%E4%B9%A0/">
+                                <span class="chip bg-color">字形练习</span>
                             </a>
                         
                     </div>
@@ -428,8 +428,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/python/" class="post-category">
-                                python
+                            <a href="/categories/%E4%B9%A6%E6%B3%95/" class="post-category">
+                                书法
                             </a>
                         
                     </div>
@@ -441,21 +441,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-17
+                    2022-01-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-17
+                    2022-01-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    332
+                    166
                 </div>
                 
 
@@ -485,107 +485,25 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="excel操作"><a href="#excel操作" class="headerlink" title="excel操作"></a>excel操作</h1><h3 id="python-format"><a href="#python-format" class="headerlink" title="python format"></a>python format</h3><p>格式化函数, 不陌生, 就是让参数替换字符串中的{ }.</p>
-<table>
-<thead>
-<tr>
-<th align="left">常见的数字格式化</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">{:.2f}</td>
-<td>保留小数点后两位</td>
-</tr>
-<tr>
-<td align="left">{:+.2f}</td>
-<td>带符号保留小数点后两位</td>
-</tr>
-<tr>
-<td align="left">{:0&gt;2d}</td>
-<td>数字补零(填充左边, 宽度为2)( &lt; 填充右边)(0换成x, 数字补x)</td>
-</tr>
-<tr>
-<td align="left">{:,}</td>
-<td>以逗号分割的数字格式</td>
-</tr>
-<tr>
-<td align="left">{:.2%}, {:.2e}</td>
-<td>百分比, 指数格式</td>
-</tr>
-<tr>
-<td align="left">{:&gt;10d}</td>
-<td>右对齐(默认, 宽度为10)</td>
-</tr>
-<tr>
-<td align="left">{:&lt;10d}</td>
-<td>左对齐</td>
-</tr>
-<tr>
-<td align="left">{:^10d}</td>
-<td>中间对齐</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td>b、d、o、x 分别是二进制、十进制、八进制、十六进制</td>
-</tr>
-</tbody></table>
-<h3 id="openpyxl-workbook"><a href="#openpyxl-workbook" class="headerlink" title="openpyxl.workbook"></a>openpyxl.workbook</h3><ul>
-<li>创建表格对象</li>
-</ul>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> openpyxl <span class="token keyword">import</span> workbook
-book <span class="token operator">=</span> workbook<span class="token punctuation">.</span>Workbook<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># 创建Excel对象</span>
-sheet <span class="token operator">=</span> book<span class="token punctuation">.</span>active  <span class="token comment"># 获取当前正在操作的表对象</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<ul>
-<li>sheet单元格写入数据</li>
-</ul>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">sheet<span class="token punctuation">[</span><span class="token string">'A1'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">56</span>
-sheet<span class="token punctuation">[</span><span class="token string">'A2'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">43</span>
-now <span class="token operator">=</span> time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%x'</span><span class="token punctuation">)</span>
-sheet<span class="token punctuation">[</span><span class="token string">'A3'</span><span class="token punctuation">]</span> <span class="token operator">=</span> now
-book<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'demo01.xlsx'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211115132343292.png" alt="生成的表格"></p>
-<ul>
-<li>cell()方法</li>
-</ul>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">sheet<span class="token punctuation">.</span>cell<span class="token punctuation">(</span>row<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> column<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token number">32</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>即为对B2单元格写入数据32.</p>
-<ul>
-<li>append()方法</li>
-</ul>
-<p>append()方法传入一个列表,实现表格逐行写入数据.</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">rows <span class="token operator">=</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">[</span><span class="token string">'人名'</span><span class="token punctuation">,</span> <span class="token string">'年龄'</span><span class="token punctuation">,</span> <span class="token string">'性别'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">[</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">[</span><span class="token string">'范德彪'</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">[</span><span class="token string">'马大帅'</span><span class="token punctuation">,</span> <span class="token number">38</span><span class="token punctuation">,</span> <span class="token string">'男'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">[</span><span class="token string">'玉芬'</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'女'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-    <span class="token punctuation">[</span><span class="token string">'小翠'</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token string">'女'</span><span class="token punctuation">]</span>
-<span class="token punctuation">]</span>
-<span class="token keyword">for</span> row <span class="token keyword">in</span> rows<span class="token punctuation">:</span>
-    sheet<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">)</span>
-book<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'demo02.xlsx'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20211115132945013.png" alt="demo02.xlsx"></p>
-<h3 id="openpyxl-load-workbook"><a href="#openpyxl-load-workbook" class="headerlink" title="openpyxl.load_workbook()"></a>openpyxl.load_workbook()</h3><ul>
-<li>读取单元格</li>
-</ul>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> openpyxl
-book <span class="token operator">=</span> openpyxl<span class="token punctuation">.</span>load_workbook<span class="token punctuation">(</span><span class="token string">'demo02.xlsx'</span><span class="token punctuation">)</span>
-sheet <span class="token operator">=</span> book<span class="token punctuation">.</span>active
-a1 <span class="token operator">=</span> sheet<span class="token punctuation">[</span><span class="token string">'A3'</span><span class="token punctuation">]</span>
-a2 <span class="token operator">=</span> sheet<span class="token punctuation">[</span><span class="token string">'B3'</span><span class="token punctuation">]</span>
-a3 <span class="token operator">=</span> sheet<span class="token punctuation">.</span>cell<span class="token punctuation">(</span>row<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> column<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a1<span class="token punctuation">.</span>value<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a2<span class="token punctuation">.</span>value<span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>a3<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote><p>输出:</p>
-<p>​    范德彪<br>​    32<br>​    男</p>
+                <h2 id="书法入门第10天"><a href="#书法入门第10天" class="headerlink" title="书法入门第10天"></a>书法入门第10天</h2><p>🎆🎆🎆恭喜恭喜，书法练习已经是第10天啦！</p>
+<p>今天的工作量可不小哈，整体来说还是有许多可以拿得出手的字的！🙉🙉🙉</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127194357367.png" alt="林s"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127194415240.png" alt="林2.0"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127194433287.png" alt="林3.0"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127194619068.png" alt="不"></p>
+<h2 id="我–成–功"><a href="#我–成–功" class="headerlink" title="我–成–功"></a>我–成–功</h2><blockquote>
+<p>也不知道是为啥哈，在要练<code>我</code>字的时候，感觉可以写好，真的笔感就来了，写出来的效果还是挺棒的，撇的顿笔感真的好哇🌟🌟🌟</p>
 </blockquote>
+<p>就节选几张比较草的吧🥳🥳🥳</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127194644340.png" alt="太对了哥"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127194812206.png" alt="哥太对"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127194845347.png" alt="我成功"></p>
+<h3 id="垂露竖-amp-悬针竖"><a href="#垂露竖-amp-悬针竖" class="headerlink" title="垂露竖&amp;悬针竖"></a>垂露竖&amp;悬针竖</h3><p>这里开个坑，感觉这两个竖的写法还是比较重要的，完全不同的两种风格。🤔🤔🤔</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127195029232.png" alt="木&amp;外（垂露竖）"></p>
+<h3 id="书接上回"><a href="#书接上回" class="headerlink" title="书接上回"></a>书接上回</h3><p>就在昨天，如约的把🐔做了     ===》    🍲🍲🍲</p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127195607566.png" alt="嘿嘿啊哈哈哈"></p>
+<p><img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/wait0.png" data-original="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/image-20220127195326436.png" alt="黑暗料理"></p>
+<h3 align="center">To be Continue……</h3>
 
 
                 
@@ -613,7 +531,7 @@ a3 <span class="token operator">=</span> sheet<span class="token punctuation">.<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luffyblog.top/posts/25204.html">https://luffyblog.top/posts/25204.html</a>
+                    <a href="https://luffyblog.top/posts/57831.html">https://luffyblog.top/posts/57831.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -651,8 +569,8 @@ a3 <span class="token operator">=</span> sheet<span class="token punctuation">.<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%9E%8E%E7%8E%A9/">
-                                    <span class="chip bg-color">瞎玩</span>
+                                <a href="/tags/%E5%AD%97%E5%BD%A2%E7%BB%83%E4%B9%A0/">
+                                    <span class="chip bg-color">字形练习</span>
                                 </a>
                             
                         </div>
@@ -808,16 +726,17 @@ a3 <span class="token operator">=</span> sheet<span class="token punctuation">.<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/21918.html">
+                <a href="/posts/57831.html">
                     <div class="card-image">
                         
-                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/rick19.jpg" class="responsive-img" alt="java牛客刷题笔记">
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220127194050.png" class="responsive-img" alt="《书法--从入门到入门》第四集">
                         
-                        <span class="card-title">java牛客刷题笔记</span>
+                        <span class="card-title">《书法--从入门到入门》第四集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -827,26 +746,27 @@ a3 <span class="token operator">=</span> sheet<span class="token punctuation">.<
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <a href="/categories/%E4%B9%A6%E6%B3%95/" class="post-category">
+                                    书法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%89%93%E5%9C%B0%E5%9F%BA/">
-                        <span class="chip bg-color">打地基</span>
+                    <a href="/tags/%E5%AD%97%E5%BD%A2%E7%BB%83%E4%B9%A0/">
+                        <span class="chip bg-color">字形练习</span>
                     </a>
                     
                 </div>
@@ -860,12 +780,12 @@ a3 <span class="token operator">=</span> sheet<span class="token punctuation">.<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/26055.html">
+                <a href="/posts/36646.html">
                     <div class="card-image">
                         
-                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/rick25.png" class="responsive-img" alt="Js入土node">
+                        <img src="https://luffyblogimg.oss-cn-beijing.aliyuncs.com/image/20220125202244.png" class="responsive-img" alt="《书法--从入门到入门》第三集">
                         
-                        <span class="card-title">Js入土node</span>
+                        <span class="card-title">《书法--从入门到入门》第三集</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -876,14 +796,14 @@ a3 <span class="token operator">=</span> sheet<span class="token punctuation">.<
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-25
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/categories/%E4%B9%A6%E6%B3%95/" class="post-category">
+                                    书法
                                 </a>
                             
                             
@@ -893,8 +813,8 @@ a3 <span class="token operator">=</span> sheet<span class="token punctuation">.<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/%E5%AD%97%E5%BD%A2%E7%BB%83%E4%B9%A0/">
+                        <span class="chip bg-color">字形练习</span>
                     </a>
                     
                 </div>
